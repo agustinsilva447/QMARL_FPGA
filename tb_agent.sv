@@ -17,7 +17,7 @@ module tb_agent();
         repeat(5) @(posedge clk);
         rst <= 0;
         
-        for(int i=0; i<=100; i++) 
+        for(int i=0; i<=250; i++) 
         begin
 //            if (i%10 == 0) begin
 //                rst <= 1;

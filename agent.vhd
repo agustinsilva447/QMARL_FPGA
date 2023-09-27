@@ -74,12 +74,11 @@ begin
                "011" when state = st3_pdf else
                "100" when state = st4_cumsum else
                "101" when state = st5_done else
-               "111";
-    
+               "111";    
     
     LFSR_PROC: process(clk)
     begin
-        if (clk'event and clk ='1') then
+        if rising_edge(clk) then
             if (rst = '1') then
                 LFSR_Data <= (others => '0');
             else
@@ -91,7 +90,7 @@ begin
     
     PDF_PROC: process(clk)
     begin
-        if (clk'event and clk ='1') then
+        if rising_edge(clk) then
             if state = st0_reset then
                 for ii in 0 to 511 loop 
                     pdf0(ii)     <= (others=>'0');
@@ -112,6 +111,7 @@ begin
             elsif state = st4_cumsum then
                 if count2 = 0 then
                     pdf1(count2)(0 downto -(res-1)) <= pdf0(count2)(0 downto -(res-1));
+                    pdf1(count2)(1) <= '0';
                 else
                     pdf1(count2) <= pdf0(count2)(0 downto -(res-1)) + pdf1(count2 - 1)(0 downto -(res-1));
                 end if;            
@@ -121,6 +121,39 @@ begin
             end if;
         end if;
     end process;
+    
+    OUTPUT_DECODE: process(clk)
+    begin 
+        if rising_edge(clk) then  
+            if state = st0_reset then
+                ao <= (others=>'0');
+                temp1 <= (others=>'0');
+                temp2 <= (others=>'0');
+                rand_sample <= (others=>'0');
+                d <= '0';
+            elsif state = st2_valid then
+                ao <= (others=>'0');
+                temp1 <= (to_sfixed(1,1,0) - alfrew);
+                temp2 <= alfrew;
+                rand_sample <= to_sfixed(LFSR_Data(res-1 downto 0), 0, -(res-1));
+                rand_sample(0) <= '0'; 
+                d <= '0';
+            elsif state = st5_done then
+                if (count2) = 512 then
+                    ao <= unsigned(LFSR_Data(8 downto 0));    
+                else
+                    ao <= to_unsigned(count2 - 1, ao'length);
+                end if;         
+                d <= '1';
+            else             
+                ao <= ao;
+                temp1 <= temp1;     
+                temp2 <= temp2;   
+                rand_sample <= rand_sample;
+                d  <= d;  
+            end if;       
+        end if;            
+    end process;  
 
     SYNC_PROC: process(clk)
     begin
@@ -155,59 +188,7 @@ begin
         end if;            
     end process;
     
-    OUTPUT_DECODE: process(state, ao, temp1, temp2, rand_sample, d, alfrew, LFSR_Data, count2)
-    begin 
-        if state = st0_reset then
-            ao <= (others=>'0');
-            temp1 <= (others=>'0');
-            temp2 <= (others=>'0');
-            rand_sample <= (others=>'0');
-            d <= '0';
-        elsif state = st1_idle then
-            ao <= ao;
-            temp1 <= temp1;
-            temp2 <= temp2;
-            rand_sample <= rand_sample;
-            d <= d;
-        elsif state = st2_valid then
-            ao <= ao;
-            temp1 <= (to_sfixed(1,1,0) - alfrew);
-            temp2 <= alfrew;
-            rand_sample <= to_sfixed(LFSR_Data(res-1 downto 0), 0, -(res-1));
-            rand_sample(0) <= '0'; 
-            d <= '0';
-        elsif state = st3_pdf then
-            ao <= ao;
-            temp1 <= temp1;
-            temp2 <= temp2;
-            rand_sample <= rand_sample;
-            d <= d;
-        elsif state = st4_cumsum then
-            ao <= ao;
-            temp1 <= temp1;     
-            temp2 <= temp2;
-            rand_sample <= rand_sample;
-            d <= d;
-        elsif state = st5_done then
-            if (count2) = 512 then
-                ao <= unsigned(LFSR_Data(8 downto 0));    
-            else
-                ao <= to_unsigned(count2 - 1, ao'length);
-            end if;
-            temp1 <= temp1;     
-            temp2 <= temp2;
-            rand_sample <= rand_sample;            
-            d <= '1';
-        else             
-            ao <= ao;
-            temp1 <= temp1;     
-            temp2 <= temp2;   
-            rand_sample <= rand_sample;
-            d  <= d;  
-        end if;            
-    end process;  
-    
-    NEXT_STATE_DECODE: process(state, val, count1, count2, pdf1, rand_sample)
+    NEXT_STATE_DECODE: process(state, val, count1, count2)
     begin        
         next_state <= state;
         case (state) is
