@@ -4,9 +4,10 @@ USE IEEE.numeric_std.ALL;
 USE work.fixed_pkg.all;
 
 entity agent is
-    Generic (   alf:    integer range 0 to 1   := 0;   -- 0: learning_rate(0.001) & 1: learning_rate(0.0001)
-                div:    integer range 1 to 512 := 8;   -- Power of 2 for dividing parallelization of PDF update
-                res:    integer range 8 to 32  := 24); -- Bit resolution of the PDF
+    Generic (   alf:    integer range 0 to 1   := 0;    -- 0: learning_rate(0.001) & 1: learning_rate(0.0001)
+                bin:    integer range 64 to 512 := 512; -- Number of bins of the PDF
+                div:    integer range 1 to 512 := 4;    -- Power of 2 for dividing parallelization of PDF update
+                res:    integer range 8 to 32  := 24);  -- Bit resolution of the PDF
     Port    (   clk:    in std_logic;
                 rst:    in std_logic;
                 val:    in std_logic;
@@ -35,14 +36,14 @@ architecture Behavioral of agent is
     signal state, next_state : state_type;
     
     TYPE pdf_t0 IS ARRAY (NATURAL RANGE <>) OF sfixed(2 downto -(res+14));    
-    signal pdf0 : pdf_t0(0 to 511);
+    signal pdf0 : pdf_t0(0 to bin-1);
     TYPE pdf_t1 IS ARRAY (NATURAL RANGE <>) OF sfixed(1 downto -(res-1));    
-    signal pdf1 : pdf_t1(0 to 511);   
+    signal pdf1 : pdf_t1(0 to bin-1);   
     
     signal d: std_logic;
     signal ao: unsigned(8 downto 0);
     signal count1: integer range 0 to div;
-    signal count2: integer range 0 to 512;
+    signal count2: integer range 0 to bin;
     signal temp1: sfixed(2 downto -24);
     signal temp2: sfixed(-9 downto -24);
     signal alfrew:  sfixed(-9 downto -24);
@@ -87,73 +88,6 @@ begin
             end if;
         end if;
     end process;
-    
-    PDF_PROC: process(clk)
-    begin
-        if rising_edge(clk) then
-            if state = st0_reset then
-                for ii in 0 to 511 loop 
-                    pdf0(ii)     <= (others=>'0');
-                    pdf0(ii)(-9) <= '1';  -- Reset to uniform distribution (1/512) = (000000001)
-                    pdf1(ii)     <= (others=>'0'); 
-                end loop;   
-            elsif state = st3_pdf then            
-                for ii in 0 to (512/div - 1) loop 
-                    if (512/div * count1 + ii) /= to_integer(ao) then
-                        pdf0(512/div * count1 + ii) <= pdf0(512/div * count1 + ii)(0 downto -(res-1)) * temp1(1 downto -15);
-                    end if;
-                end loop;
-                if count1 = 0 then
-                    pdf0(to_integer(ao)) <= pdf0(to_integer(ao))(0 downto -(res-1)) * temp1(0 downto -15) + temp2;
-                else 
-                    pdf0(to_integer(ao)) <= pdf0(to_integer(ao)); 
-                end if;
-            elsif state = st4_cumsum then
-                if count2 = 0 then
-                    pdf1(count2)(0 downto -(res-1)) <= pdf0(count2)(0 downto -(res-1));
-                    pdf1(count2)(1) <= '0';
-                else
-                    pdf1(count2) <= pdf0(count2)(0 downto -(res-1)) + pdf1(count2 - 1)(0 downto -(res-1));
-                end if;            
-            else
-                pdf0 <= pdf0; 
-                pdf1 <= pdf1; 
-            end if;
-        end if;
-    end process;
-    
-    OUTPUT_DECODE: process(clk)
-    begin 
-        if rising_edge(clk) then  
-            if state = st0_reset then
-                ao <= (others=>'0');
-                temp1 <= (others=>'0');
-                temp2 <= (others=>'0');
-                rand_sample <= (others=>'0');
-                d <= '0';
-            elsif state = st2_valid then
-                ao <= (others=>'0');
-                temp1 <= (to_sfixed(1,1,0) - alfrew);
-                temp2 <= alfrew;
-                rand_sample <= to_sfixed(LFSR_Data(res-1 downto 0), 0, -(res-1));
-                rand_sample(0) <= '0'; 
-                d <= '0';
-            elsif state = st5_done then
-                if (count2) = 512 then
-                    ao <= unsigned(LFSR_Data(8 downto 0));    
-                else
-                    ao <= to_unsigned(count2 - 1, ao'length);
-                end if;         
-                d <= '1';
-            else             
-                ao <= ao;
-                temp1 <= temp1;     
-                temp2 <= temp2;   
-                rand_sample <= rand_sample;
-                d  <= d;  
-            end if;       
-        end if;            
-    end process;  
 
     SYNC_PROC: process(clk)
     begin
@@ -174,7 +108,7 @@ begin
                     count1 <= 0;
                 end if;                 
                 if state = st4_cumsum then
-                    if count2 = 512 then
+                    if count2 = bin then
                         count2 <= count2;
                     else
                         count2 <= count2 + 1;
@@ -186,6 +120,65 @@ begin
                 end if;                    
             end if;      
         end if;            
+    end process;
+    
+    OUTPUT_DECODE: process(clk)
+    begin 
+        if rising_edge(clk) then  
+            if state = st0_reset then
+                ao <= (others=>'0');
+                temp1 <= (others=>'0');
+                temp2 <= (others=>'0');
+                rand_sample <= (others=>'0');
+                d <= '0';
+            elsif state = st2_valid then
+                ao <= (others=>'0');
+                temp1 <= (to_sfixed(1,1,0) - alfrew);
+                temp2 <= alfrew;
+                rand_sample <= to_sfixed(LFSR_Data(res-1 downto 0), 0, -(res-1));
+                rand_sample(0) <= '0'; 
+                d <= '0';
+            elsif state = st5_done then
+                if (count2) = bin then
+                    ao <= unsigned(LFSR_Data(8 downto 0));    
+                else
+                    ao <= to_unsigned(count2 - 1, ao'length);
+                end if;         
+                d <= '1';
+            end if;       
+        end if;            
+    end process;  
+    
+    PDF_PROC: process(clk)
+    begin
+        if rising_edge(clk) then
+            if state = st0_reset then
+                for ii in 0 to bin-1 loop 
+                    pdf0(ii)     <= (others=>'0');
+                    --pdf0(ii)(-9) <= '1';  -- Reset to uniform distribution (1/512) = (000000001)
+                    pdf0(ii)(-6) <= '1';  -- Reset to uniform distribution (1/64) = (000001)
+                    pdf1(ii)     <= (others=>'0'); 
+                end loop;   
+            elsif state = st3_pdf then            
+                for ii in 0 to (bin/div - 1) loop 
+                    if (bin/div * count1 + ii) /= to_integer(ao) then
+                        pdf0(bin/div * count1 + ii) <= pdf0(bin/div * count1 + ii)(0 downto -(res-1)) * temp1(1 downto -15);
+                    end if;
+                end loop;
+                if count1 = 0 then
+                    pdf0(to_integer(ao)) <= pdf0(to_integer(ao))(0 downto -(res-1)) * temp1(0 downto -15) + temp2;
+                else 
+                    pdf0(to_integer(ao)) <= pdf0(to_integer(ao)); 
+                end if;
+            elsif state = st4_cumsum then
+                if count2 = 0 then
+                    pdf1(count2)(0 downto -(res-1)) <= pdf0(count2)(0 downto -(res-1));
+                    pdf1(count2)(1) <= '0';
+                else
+                    pdf1(count2) <= pdf0(count2)(0 downto -(res-1)) + pdf1(count2 - 1)(0 downto -(res-1));
+                end if;            
+            end if;
+        end if;
     end process;
     
     NEXT_STATE_DECODE: process(state, val, count1, count2)
@@ -206,7 +199,7 @@ begin
                 end if;                            
             when st4_cumsum =>    
                 if (count2 /= 0) then
-                    if (pdf1(count2 - 1)(0 downto -(res-1)) > rand_sample) or (count2 = 511) then                
+                    if (pdf1(count2 - 1)(0 downto -(res-1)) > rand_sample) or (count2 = bin-1) then                
                         next_state <= st5_done;  
                     end if;                  
                 end if;                         
