@@ -14,20 +14,11 @@ entity agent is
                 reward: in std_logic_vector(15 downto 0);
                 action: out std_logic_vector(8 downto 0);
                 done:   out std_logic;
-                o_count1:       out std_logic_vector(15 downto 0);
-                o_count2:       out std_logic_vector(15 downto 0);
-                o_temp1:        out std_logic_vector(15 downto 0);
-                o_temp2:        out std_logic_vector(15 downto 0);
-                o_rand_sample:  out std_logic_vector(15 downto 0);
                 o_state:        out std_logic_vector(2 downto 0);
                 p_00: out std_logic_vector(15 downto 0);
                 p_01: out std_logic_vector(15 downto 0);
-                p_02: out std_logic_vector(15 downto 0);
-                p_03: out std_logic_vector(15 downto 0);
                 c_00: out std_logic_vector(15 downto 0);
-                c_01: out std_logic_vector(15 downto 0);
-                c_02: out std_logic_vector(15 downto 0);
-                c_03: out std_logic_vector(15 downto 0));
+                c_01: out std_logic_vector(15 downto 0));
 end agent;
 
 architecture Behavioral of agent is
@@ -42,8 +33,8 @@ architecture Behavioral of agent is
     
     signal d: std_logic;
     signal ao: unsigned(8 downto 0);
-    signal count1: integer range 0 to div;
-    signal count2: integer range 0 to bin;
+    signal count1: integer range 0 to (div+1);
+    signal count2: integer range 0 to (bin+1);
     signal temp1: sfixed(2 downto -24);
     signal temp2: sfixed(-9 downto -24);
     signal alfrew:  sfixed(-9 downto -24);
@@ -58,17 +49,8 @@ begin
     done <= d;
     p_00 <= To_std_logic_vector(pdf0(0)(2 downto -13));
     p_01 <= To_std_logic_vector(pdf0(1)(2 downto -13));
-    p_02 <= To_std_logic_vector(pdf0(2)(2 downto -13));
-    p_03 <= To_std_logic_vector(pdf0(3)(2 downto -13));
     c_00 <= To_std_logic_vector(pdf1(0)(1 downto -14));    
     c_01 <= To_std_logic_vector(pdf1(1)(1 downto -14));    
-    c_02 <= To_std_logic_vector(pdf1(2)(1 downto -14));    
-    c_03 <= To_std_logic_vector(pdf1(3)(1 downto -14));
-    o_count1 <= std_logic_vector(to_unsigned(count1, o_count1'length));
-    o_count2 <= std_logic_vector(to_unsigned(count2, o_count2'length));
-    o_temp1 <= To_std_logic_vector(temp1(2 downto -13));
-    o_temp2 <= To_std_logic_vector(temp2);
-    o_rand_sample <= To_std_logic_vector(rand_sample(0 downto -15));
     o_state <= "000" when state = st0_reset else
                "001" when state = st1_idle  else
                "010" when state = st2_valid else

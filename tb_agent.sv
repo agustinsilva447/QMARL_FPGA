@@ -6,7 +6,7 @@ module tb_agent();
     logic [15:0] r;
     logic [8:0] a;
     
-    agent #(0, 64, 1, 24) a1(clk,rst,v,r,a,d);
+    agent #(0, 64, 1, 20) a1(clk,rst,v,r,a,d);
     always #10 clk <= ~clk;
     
     initial begin
