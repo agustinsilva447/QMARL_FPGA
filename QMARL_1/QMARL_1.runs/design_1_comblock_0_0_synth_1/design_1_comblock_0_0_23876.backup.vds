@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Sep 12 11:41:32 2023
+# Process ID: 23876
+# Current directory: C:/Users/mlabadmin/Desktop/QMARL/QMARL_1/QMARL_1.runs/design_1_comblock_0_0_synth_1
+# Command line: vivado.exe -log design_1_comblock_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_comblock_0_0.tcl
+# Log file: C:/Users/mlabadmin/Desktop/QMARL/QMARL_1/QMARL_1.runs/design_1_comblock_0_0_synth_1/design_1_comblock_0_0.vds
+# Journal file: C:/Users/mlabadmin/Desktop/QMARL/QMARL_1/QMARL_1.runs/design_1_comblock_0_0_synth_1\vivado.jou
+# Running On: hp6g4-step-1, OS: Windows, CPU Frequency: 3192 MHz, CPU Physical cores: 6, Host memory: 16948 MB
+#-----------------------------------------------------------
+source design_1_comblock_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1546.547 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/mlabadmin/Downloads/core-comblock'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2022.1/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1546.547 ; gain = 0.000
+Command: synth_design -top design_1_comblock_0_0 -part xc7z020clg484-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 89724

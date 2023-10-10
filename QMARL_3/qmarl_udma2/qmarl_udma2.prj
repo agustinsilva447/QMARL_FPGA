@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="qmarl_udma2" location="C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/qmarl_udma2" platform="C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm" platformUID="xilinx:hyperfpga_4ge21::0.0(custom)" systemProject="qmarl_udma2_system" sysConfig="design_1_wrapper" runtime="cpp" cpu="freertos10_xilinx_psu_cortexr5_0" cpuInstance="psu_cortexr5_0" os="freertos10_xilinx" mssSignature="13d84d7514a197ca57853848c1578777">
+  <configuration name="Debug" id="xilinx.gnu.arm.r5.exe.debug.2115905623">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.arm.r5.exe.release.70584708" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="udma_server" hasBspSettings="true"/>
+</sdkproject:SdkProject>

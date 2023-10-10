@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Thu Sep 14 17:46:46 2023
+# Process ID: 78464
+# Current directory: C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.runs/design_1_comblock_0_0_synth_1
+# Command line: vivado.exe -log design_1_comblock_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_comblock_0_0.tcl
+# Log file: C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.runs/design_1_comblock_0_0_synth_1/design_1_comblock_0_0.vds
+# Journal file: C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.runs/design_1_comblock_0_0_synth_1\vivado.jou
+# Running On: hp6g4-step-1, OS: Windows, CPU Frequency: 3192 MHz, CPU Physical cores: 6, Host memory: 16948 MB
+#-----------------------------------------------------------
+source design_1_comblock_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/mlabadmin/Downloads/core-comblock'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2022.1/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_comblock_0_0, cache-ID = 2985f0bc1257c35a.
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 14 17:46:55 2023...

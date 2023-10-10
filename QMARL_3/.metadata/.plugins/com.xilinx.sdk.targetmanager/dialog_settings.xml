@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="devices_info_Local" value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent JTAG-HS2 210249AE8C3E&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-JTAG-HS2-210249AE8C3E-04721093-0&quot;,&quot;3&quot;:&quot;jsn-JTAG-HS2-210249AE8C3E-5ba00477-0&quot;}}]}"/>
+	<item key="qmarl_udma2_system-bitFile" value="${project_loc:qmarl_udma2}/_ide/bitstream/design_1_wrapper.bit"/>
+	<item key="qmarl_udma2_system-bmmFile" value=""/>
+	<item key="qmarl_udma2_system-target" value="Local"/>
+	<item key="qmarl_udma2_system-device" value="Auto Detect"/>
+	<item key="qmarl_udma2_system-partial_bit" value="false"/>
+	<item key="qmarl_udma2_system-skip_rev_check" value="false"/>
+	<item key="programfpga.sdxproject" value="qmarl_udma2_system"/>
+</section>

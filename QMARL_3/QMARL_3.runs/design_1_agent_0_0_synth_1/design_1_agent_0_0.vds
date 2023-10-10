@@ -1,0 +1,757 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Thu Sep 14 16:53:00 2023
+# Process ID: 13436
+# Current directory: C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.runs/design_1_agent_0_0_synth_1
+# Command line: vivado.exe -log design_1_agent_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_agent_0_0.tcl
+# Log file: C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.runs/design_1_agent_0_0_synth_1/design_1_agent_0_0.vds
+# Journal file: C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.runs/design_1_agent_0_0_synth_1\vivado.jou
+# Running On: hp6g4-step-1, OS: Windows, CPU Frequency: 3192 MHz, CPU Physical cores: 6, Host memory: 16948 MB
+#-----------------------------------------------------------
+source design_1_agent_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1599.160 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/mlabadmin/Downloads/core-comblock'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2022.1/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 1599.160 ; gain = 0.000
+Command: synth_design -top design_1_agent_0_0 -part xczu4eg-sfvc784-2-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu4eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu4eg'
+INFO: [Device 21-403] Loading part xczu4eg-sfvc784-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 19696
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:07:21 . Memory (MB): peak = 2097.543 ; gain = 320.625
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_agent_0_0' [c:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.gen/sources_1/bd/design_1/ip/design_1_agent_0_0/synth/design_1_agent_0_0.vhd:68]
+	Parameter alf bound to: 0 - type: integer 
+	Parameter div bound to: 8 - type: integer 
+	Parameter res bound to: 24 - type: integer 
+INFO: [Synth 8-3491] module 'agent' declared at 'C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:6' bound to instance 'U0' of component 'agent' [c:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.gen/sources_1/bd/design_1/ip/design_1_agent_0_0/synth/design_1_agent_0_0.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'agent' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:19]
+INFO: [Synth 8-638] synthesizing module 'LFSR' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/lfsr.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'LFSR' (0#1) [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/lfsr.vhd:18]
+WARNING: [Synth 8-614] signal 'pdf0' is read in the process but is not in the sensitivity list [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:98]
+WARNING: [Synth 8-614] signal 'pdf1' is read in the process but is not in the sensitivity list [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:98]
+WARNING: [Synth 8-614] signal 'ao' is read in the process but is not in the sensitivity list [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:98]
+WARNING: [Synth 8-614] signal 'temp1' is read in the process but is not in the sensitivity list [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:98]
+WARNING: [Synth 8-614] signal 'temp2' is read in the process but is not in the sensitivity list [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:98]
+WARNING: [Synth 8-614] signal 'rand_sample' is read in the process but is not in the sensitivity list [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:98]
+WARNING: [Synth 8-614] signal 'd' is read in the process but is not in the sensitivity list [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:98]
+WARNING: [Synth 8-614] signal 'alfrew' is read in the process but is not in the sensitivity list [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:98]
+WARNING: [Synth 8-614] signal 'o_LFSR_Data' is read in the process but is not in the sensitivity list [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:98]
+WARNING: [Synth 8-614] signal 'pdf' is read in the process but is not in the sensitivity list [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:98]
+WARNING: [Synth 8-614] signal 'pdf1' is read in the process but is not in the sensitivity list [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:194]
+WARNING: [Synth 8-614] signal 'rand_sample' is read in the process but is not in the sensitivity list [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:194]
+INFO: [Synth 8-256] done synthesizing module 'agent' (0#1) [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'design_1_agent_0_0' (0#1) [c:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.gen/sources_1/bd/design_1/ip/design_1_agent_0_0/synth/design_1_agent_0_0.vhd:68]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:02:08 ; elapsed = 00:11:02 . Memory (MB): peak = 5737.473 ; gain = 3960.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:10 ; elapsed = 00:11:04 . Memory (MB): peak = 5737.473 ; gain = 3960.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:10 ; elapsed = 00:11:04 . Memory (MB): peak = 5737.473 ; gain = 3960.555
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 5737.473 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 7394.797 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:01:07 ; elapsed = 00:00:44 . Memory (MB): peak = 8986.645 ; gain = 1591.848
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:07:47 ; elapsed = 00:17:27 . Memory (MB): peak = 8986.645 ; gain = 7209.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu4eg-sfvc784-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:07:47 ; elapsed = 00:17:27 . Memory (MB): peak = 8986.645 ; gain = 7209.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:07:48 ; elapsed = 00:17:27 . Memory (MB): peak = 8986.645 ; gain = 7209.727
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'agent'
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[511]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               st0_reset |                              000 |                              000
+                st1_idle |                              001 |                              001
+               st2_valid |                              010 |                              010
+                 st3_pdf |                              011 |                              011
+              st4_cumsum |                              100 |                              100
+                st5_done |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'agent'
+WARNING: [Synth 8-327] inferring latch for variable 'ao_reg' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'd_reg' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[1]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[2]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[3]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[4]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[5]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[6]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[7]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[8]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[9]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[10]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[11]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[12]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[13]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[14]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[15]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[16]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[17]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[18]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[19]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[20]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[21]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[22]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[23]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[24]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[25]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[26]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[27]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[28]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[29]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[30]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[31]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[32]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[33]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[34]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[35]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[36]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[37]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[38]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[39]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[40]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[41]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[42]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[43]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[44]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[45]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[46]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[47]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[48]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[49]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[50]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[51]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[52]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[53]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[54]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[55]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[56]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[57]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[58]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[59]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[60]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[61]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[62]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[63]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[64]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[65]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[66]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[67]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[68]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[69]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[70]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[71]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[72]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[73]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[74]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[75]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[76]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[77]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[78]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[79]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[80]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[81]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[82]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[83]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[84]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[85]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[86]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[87]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[88]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[89]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[90]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[91]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[92]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[93]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[94]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[95]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'pdf1_reg[96]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:51]
+INFO: [Common 17-14] Message 'Synth 8-327' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:08:42 ; elapsed = 00:18:32 . Memory (MB): peak = 8986.645 ; gain = 7209.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   27 Bit       Adders := 1     
+	   2 Input   25 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input   41 Bit        Muxes := 1024  
+	   2 Input   25 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 1     
+	   5 Input   24 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 2584  
+	   4 Input    1 Bit        Muxes := 512   
+	   5 Input    1 Bit        Muxes := 514   
+	   6 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 512   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 728 (col length:96)
+BRAMs: 256 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: C+A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+INFO: [Synth 8-4471] merging register 'count1_reg[3:0]' into 'count1_reg[3:0]' [C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.srcs/sources_1/imports/QMARL/QMARL_1/QMARL_1.srcs/sources_1/new/agent.vhd:71]
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+WARNING: [Synth 8-3917] design agent__GB6 has port P[5] driven by constant 0
+WARNING: [Synth 8-3917] design agent__GB6 has port P[4] driven by constant 0
+WARNING: [Synth 8-3917] design agent__GB6 has port P[3] driven by constant 0
+WARNING: [Synth 8-3917] design agent__GB6 has port P[2] driven by constant 0
+WARNING: [Synth 8-3917] design agent__GB6 has port P[1] driven by constant 0
+WARNING: [Synth 8-3917] design agent__GB6 has port P[0] driven by constant 0
+INFO: [Synth 8-3886] merging instance 'temp1_reg[-8]' (LDC) to 'temp1_reg[-7]'
+INFO: [Synth 8-3886] merging instance 'temp1_reg[-7]' (LDC) to 'temp1_reg[-6]'
+INFO: [Synth 8-3886] merging instance 'temp1_reg[-6]' (LDC) to 'temp1_reg[-5]'
+INFO: [Synth 8-3886] merging instance 'temp1_reg[-5]' (LDC) to 'temp1_reg[-4]'
+INFO: [Synth 8-3886] merging instance 'temp1_reg[-4]' (LDC) to 'temp1_reg[-3]'
+INFO: [Synth 8-3886] merging instance 'temp1_reg[-3]' (LDC) to 'temp1_reg[-2]'
+INFO: [Synth 8-3886] merging instance 'temp1_reg[-2]' (LDC) to 'temp1_reg[-1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\temp1_reg[1] )
+INFO: [Synth 8-3886] merging instance 'count1_reg[0]' (FDRE) to 'count1_reg[0]__0'
+INFO: [Synth 8-3886] merging instance 'count1_reg[1]' (FDRE) to 'count1_reg[1]__0'
+INFO: [Synth 8-3886] merging instance 'count1_reg[2]' (FDRE) to 'count1_reg[2]__0'
+INFO: [Synth 8-3886] merging instance 'count1_reg[3]' (FDRE) to 'count1_reg[3]__0'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rand_sample_reg[0] )
+WARNING: [Synth 8-264] enable of latch \pdf1_reg[0][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \pdf1_reg[0][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \pdf1_reg[0][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \pdf1_reg[0][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \pdf1_reg[0][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \pdf1_reg[0][1]  is always disabled
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:09:32 ; elapsed = 00:20:00 . Memory (MB): peak = 8986.645 ; gain = 7209.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | C+A*B       | 24     | 16     | 30     | -      | 41     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:09:44 ; elapsed = 00:20:19 . Memory (MB): peak = 8986.645 ; gain = 7209.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:09:46 ; elapsed = 00:20:20 . Memory (MB): peak = 8986.645 ; gain = 7209.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:10:09 ; elapsed = 00:20:45 . Memory (MB): peak = 8986.645 ; gain = 7209.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:10:23 ; elapsed = 00:21:00 . Memory (MB): peak = 8986.645 ; gain = 7209.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:10:23 ; elapsed = 00:21:00 . Memory (MB): peak = 8986.645 ; gain = 7209.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:10:26 ; elapsed = 00:21:03 . Memory (MB): peak = 8986.645 ; gain = 7209.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:10:26 ; elapsed = 00:21:03 . Memory (MB): peak = 8986.645 ; gain = 7209.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:10:31 ; elapsed = 00:21:08 . Memory (MB): peak = 8986.645 ; gain = 7209.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:10:31 ; elapsed = 00:21:08 . Memory (MB): peak = 8986.645 ; gain = 7209.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | C+A*B       | 30     | 18     | 48     | -      | 41     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B         | 30     | 16     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |CARRY8          |     8|
+|2     |DSP_ALU         |    65|
+|3     |DSP_A_B_DATA    |    65|
+|4     |DSP_C_DATA      |    65|
+|6     |DSP_MULTIPLIER  |    65|
+|7     |DSP_M_DATA      |    65|
+|8     |DSP_OUTPUT      |    65|
+|9     |DSP_PREADD      |    65|
+|10    |DSP_PREADD_DATA |    65|
+|11    |LUT1            |    50|
+|12    |LUT2            |   293|
+|13    |LUT3            |  1098|
+|14    |LUT4            |  3070|
+|15    |LUT5            |   553|
+|16    |LUT6            | 23358|
+|17    |MUXF7           |  6500|
+|18    |MUXF8           |  2336|
+|19    |FDRE            |   192|
+|20    |LDC             | 24820|
+|21    |LDP             |   512|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:10:31 ; elapsed = 00:21:08 . Memory (MB): peak = 8986.645 ; gain = 7209.727
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1041 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:09 ; elapsed = 00:15:53 . Memory (MB): peak = 8986.645 ; gain = 3960.555
+Synthesis Optimization Complete : Time (s): cpu = 00:10:31 ; elapsed = 00:21:15 . Memory (MB): peak = 8986.645 ; gain = 7209.727
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.513 . Memory (MB): peak = 8986.645 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 34241 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 3 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'design_1_agent_0_0' is not ideal for floorplanning, since the cellview 'agent' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.014 . Memory (MB): peak = 8986.645 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 25397 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 65 instances
+  LDC => LDCE: 24820 instances
+  LDP => LDPE: 512 instances
+
+Synth Design complete, checksum: 86c86ade
+INFO: [Common 17-83] Releasing license: Synthesis
+105 Infos, 125 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:10:51 ; elapsed = 00:21:47 . Memory (MB): peak = 8986.645 ; gain = 7387.484
+INFO: [Common 17-1381] The checkpoint 'C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.runs/design_1_agent_0_0_synth_1/design_1_agent_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_agent_0_0, cache-ID = 3489262f84029882
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/mlabadmin/Desktop/QMARL/QMARL_3/QMARL_3.runs/design_1_agent_0_0_synth_1/design_1_agent_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_agent_0_0_utilization_synth.rpt -pb design_1_agent_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 14 17:16:12 2023...

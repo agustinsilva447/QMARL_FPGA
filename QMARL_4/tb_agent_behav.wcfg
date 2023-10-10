@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_agent_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="fixed_pkg" />
+            <top_module name="glbl" />
+            <top_module name="tb_agent" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,000.001 ns"></ZoomEndTime>
+      <Cursor1Time time="160.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="168"></NameColumnWidth>
+      <ValueColumnWidth column_width="130"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="18" />
+   <wvobject fp_name="/tb_agent/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_agent/a1/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_agent/a1/val" type="logic">
+      <obj_property name="ElementShortName">val</obj_property>
+      <obj_property name="ObjectShortName">val</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_agent/a1/reward" type="array">
+      <obj_property name="ElementShortName">reward[15:0]</obj_property>
+      <obj_property name="ObjectShortName">reward[15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">11</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_agent/a1/alfrew" type="array">
+      <obj_property name="ElementShortName">alfrew[-9:-24]</obj_property>
+      <obj_property name="ObjectShortName">alfrew[-9:-24]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">11</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_agent/a1/e_fifo" type="logic">
+      <obj_property name="ElementShortName">e_fifo</obj_property>
+      <obj_property name="ObjectShortName">e_fifo</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_agent/a1/action" type="array">
+      <obj_property name="ElementShortName">action[8:0]</obj_property>
+      <obj_property name="ObjectShortName">action[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_agent/a1/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_agent/a1/temp1" type="array">
+      <obj_property name="ElementShortName">temp1[2:-24]</obj_property>
+      <obj_property name="ObjectShortName">temp1[2:-24]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_agent/a1/temp2" type="array">
+      <obj_property name="ElementShortName">temp2[-9:-24]</obj_property>
+      <obj_property name="ObjectShortName">temp2[-9:-24]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_agent/a1/count1" type="other">
+      <obj_property name="ElementShortName">count1</obj_property>
+      <obj_property name="ObjectShortName">count1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_agent/a1/count2" type="other">
+      <obj_property name="ElementShortName">count2</obj_property>
+      <obj_property name="ObjectShortName">count2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_agent/a1/state" type="other">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_agent/a1/next_state" type="other">
+      <obj_property name="ElementShortName">next_state</obj_property>
+      <obj_property name="ObjectShortName">next_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_agent/a1/pdf0" type="array">
+      <obj_property name="ElementShortName">pdf0[0:63][2:-38]</obj_property>
+      <obj_property name="ObjectShortName">pdf0[0:63][2:-38]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">38</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_agent/a1/pdf1" type="array">
+      <obj_property name="ElementShortName">pdf1[0:63][1:-23]</obj_property>
+      <obj_property name="ObjectShortName">pdf1[0:63][1:-23]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">23</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_agent/a1/LFSR_Data" type="array">
+      <obj_property name="ElementShortName">LFSR_Data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">LFSR_Data[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_agent/a1/rand_sample" type="array">
+      <obj_property name="ElementShortName">rand_sample[0:-23]</obj_property>
+      <obj_property name="ObjectShortName">rand_sample[0:-23]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">23</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+</wave_config>
