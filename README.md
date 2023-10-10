@@ -1,1 +1,1 @@
-# QMARL_FPGA
+# QMARL_HyperFPGA
