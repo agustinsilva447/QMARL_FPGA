@@ -1,0 +1,19 @@
+HARDWARE(t_max = 100000) 5, 64, 4, 32, 
+Average Reward of Player 0 = 4.939062.
+Average Reward of Player 1 = 3.262514.
+Performance over all players = 82.02%.
+
+SOFTWARE(t_max = 100000)
+Average Reward of Player 0 = 5.381408.
+Average Reward of Player 1 = 4.608351.
+Performance over all players = 99.90%.
+----
+HARDWARE(t_max = 100000) 3, 64, 4, 32, 
+Average Reward of Player 0 = 4.720673.
+Average Reward of Player 1 = 1.754854.
+Performance over all players = 64.76%.
+
+SOFTWARE(t_max = 100000)
+Average Reward of Player 0 = 5.000000.
+Average Reward of Player 1 = 5.000000.
+Performance over all players = 100.00%.
