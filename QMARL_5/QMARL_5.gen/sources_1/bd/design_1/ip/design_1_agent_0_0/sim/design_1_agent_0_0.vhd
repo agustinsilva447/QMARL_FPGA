@@ -112,9 +112,9 @@ ARCHITECTURE design_1_agent_0_0_arch OF design_1_agent_0_0 IS
 BEGIN
   U0 : agent
     GENERIC MAP (
-      alf => 3,
+      alf => 13,
       bin => 64,
-      div => 4,
+      div => 1,
       res => 23
     )
     PORT MAP (

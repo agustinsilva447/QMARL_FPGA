@@ -108,7 +108,7 @@ ARCHITECTURE design_1_agent_0_0_arch OF design_1_agent_0_0 IS
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF design_1_agent_0_0_arch : ARCHITECTURE IS "design_1_agent_0_0,agent,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF design_1_agent_0_0_arch: ARCHITECTURE IS "design_1_agent_0_0,agent,{x_ipProduct=Vivado 2022.1,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=agent,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,alf=3,bin=64,div=4,res=23}";
+  ATTRIBUTE CORE_GENERATION_INFO OF design_1_agent_0_0_arch: ARCHITECTURE IS "design_1_agent_0_0,agent,{x_ipProduct=Vivado 2022.1,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=agent,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,alf=13,bin=64,div=1,res=23}";
   ATTRIBUTE IP_DEFINITION_SOURCE : STRING;
   ATTRIBUTE IP_DEFINITION_SOURCE OF design_1_agent_0_0_arch: ARCHITECTURE IS "module_ref";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
@@ -120,9 +120,9 @@ ARCHITECTURE design_1_agent_0_0_arch OF design_1_agent_0_0 IS
 BEGIN
   U0 : agent
     GENERIC MAP (
-      alf => 3,
+      alf => 13,
       bin => 64,
-      div => 4,
+      div => 1,
       res => 23
     )
     PORT MAP (

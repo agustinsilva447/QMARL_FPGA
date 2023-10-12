@@ -4,9 +4,9 @@ USE IEEE.numeric_std.ALL;
 USE work.fixed_pkg.all;
 
 entity agent is
-    Generic (   alf:    integer range 0 to 5    := 3;    -- learning_rate = [0.001953125, 0.0009765625, 0.00048828125, 0.000244140625, 0.0001220703125]
+    Generic (   alf:    integer range 5 to 16   := 11;    -- learning_rate = [0.001953125, 0.0009765625, 0.00048828125, 0.000244140625, 0.0001220703125]
                 bin:    integer range 64 to 512 := 64;   -- Number of bins of the PDF
-                div:    integer range 1 to 512  := 4;    -- Power of 2 for dividing parallelization of PDF update
+                div:    integer range 1 to 512  := 1;    -- Power of 2 for dividing parallelization of PDF update
                 res:    integer range 8 to 32   := 23);  -- Bit resolution of the PDF
     Port    (   clk:    in std_logic;
                 rst:    in std_logic;
@@ -41,16 +41,16 @@ architecture Behavioral of agent is
     signal ao: unsigned(5 downto 0); -- 64 bins   
     signal count1: integer range 0 to (div+1);
     signal count2: integer range 0 to (bin+1);
-    signal temp1:  sfixed(2 downto -(19+alf));
-    signal temp2:  sfixed(-(4+alf) downto -(19+alf));
-    signal alfrew: sfixed(-(4+alf) downto -(19+alf));
+    signal temp1:  sfixed(2 downto -(11+alf));
+    signal temp2:  sfixed((4-alf) downto -(11+alf));
+    signal alfrew: sfixed((4-alf) downto -(11+alf));
     signal one: sfixed(1 downto 0);
     signal LFSR_Data: std_logic_vector(31 downto 0);
     signal rand_sample: sfixed(0 downto -(res-1));
 
 begin
     one <= to_sfixed(1,1,0);
-    alfrew <= to_sfixed(reward, -(4+alf), -(19+alf)); 
+    alfrew <= to_sfixed(reward, (4-alf), -(11+alf)); 
     --action <= std_logic_vector(ao);            -- 512 bins
     action(8 downto 6) <= (others => '0');       -- 64 bins
     action(5 downto 0) <= std_logic_vector(ao);  -- 64 bins
@@ -63,7 +63,7 @@ begin
     c_01 <= To_std_logic_vector(pdf1(1)(2 downto -13));   
     c_63 <= To_std_logic_vector(pdf1(63)(2 downto -13));    
     te_1 <= To_std_logic_vector(temp1(2 downto -13));
-    te_2 <= To_std_logic_vector(temp2(-(4+alf) downto -(19+alf)));
+    te_2 <= To_std_logic_vector(temp2((4-alf) downto -(11+alf)));
     o_state <= "000" when state = st0_reset else
                "001" when state = st1_idle  else
                "010" when state = st2_valid else

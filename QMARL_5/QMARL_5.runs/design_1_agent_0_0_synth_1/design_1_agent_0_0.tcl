@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "design_1_agent_0_0_synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 3
 set_param project.vivado.isBlockSynthRun true
 OPTRACE "Creating in-memory project" START { }
 set_param ips.modRefOverrideMrefDirPath c:/Users/mlabadmin/Desktop/QMARL/QMARL_5/QMARL_5.gen/sources_1/bd/mref

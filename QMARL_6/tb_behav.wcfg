@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="fixed_pkg" />
+            <top_module name="glbl" />
+            <top_module name="tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="356.430001 us"></ZoomEndTime>
+      <Cursor1Time time="0.000000 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="168"></NameColumnWidth>
+      <ValueColumnWidth column_width="98"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="16" />
+   <wvobject fp_name="/tb/a1/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/a1/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/a1/val" type="logic">
+      <obj_property name="ElementShortName">val</obj_property>
+      <obj_property name="ObjectShortName">val</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/a1/reward" type="array">
+      <obj_property name="ElementShortName">reward[15:0]</obj_property>
+      <obj_property name="ObjectShortName">reward[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/a1/e_fifo" type="logic">
+      <obj_property name="ElementShortName">e_fifo</obj_property>
+      <obj_property name="ObjectShortName">e_fifo</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/a1/action" type="array">
+      <obj_property name="ElementShortName">action[8:0]</obj_property>
+      <obj_property name="ObjectShortName">action[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/a1/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/a1/state" type="other">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/a1/next_state" type="other">
+      <obj_property name="ElementShortName">next_state</obj_property>
+      <obj_property name="ObjectShortName">next_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/a1/count1" type="other">
+      <obj_property name="ElementShortName">count1</obj_property>
+      <obj_property name="ObjectShortName">count1</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/a1/count2" type="other">
+      <obj_property name="ElementShortName">count2</obj_property>
+      <obj_property name="ObjectShortName">count2</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/a1/temp1" type="array">
+      <obj_property name="ElementShortName">temp1[2:-21]</obj_property>
+      <obj_property name="ObjectShortName">temp1[2:-21]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/a1/temp2" type="array">
+      <obj_property name="ElementShortName">temp2[-6:-21]</obj_property>
+      <obj_property name="ObjectShortName">temp2[-6:-21]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/a1/cumsum" type="array">
+      <obj_property name="ElementShortName">cumsum[2:-31]</obj_property>
+      <obj_property name="ObjectShortName">cumsum[2:-31]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">31</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/a1/rand_sample" type="array">
+      <obj_property name="ElementShortName">rand_sample[0:-31]</obj_property>
+      <obj_property name="ObjectShortName">rand_sample[0:-31]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">31</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/a1/pdf0" type="array">
+      <obj_property name="ElementShortName">pdf0[0:63][4:-38]</obj_property>
+      <obj_property name="ObjectShortName">pdf0[0:63][4:-38]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">38</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <wvobject fp_name="/tb/a1/pdf0[0]" type="array">
+         <obj_property name="ElementShortName">[0][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[0][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[1]" type="array">
+         <obj_property name="ElementShortName">[1][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[1][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[2]" type="array">
+         <obj_property name="ElementShortName">[2][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[2][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[3]" type="array">
+         <obj_property name="ElementShortName">[3][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[3][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[4]" type="array">
+         <obj_property name="ElementShortName">[4][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[4][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[5]" type="array">
+         <obj_property name="ElementShortName">[5][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[5][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[6]" type="array">
+         <obj_property name="ElementShortName">[6][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[6][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[7]" type="array">
+         <obj_property name="ElementShortName">[7][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[7][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[8]" type="array">
+         <obj_property name="ElementShortName">[8][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[8][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[9]" type="array">
+         <obj_property name="ElementShortName">[9][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[9][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[10]" type="array">
+         <obj_property name="ElementShortName">[10][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[10][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[11]" type="array">
+         <obj_property name="ElementShortName">[11][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[11][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[12]" type="array">
+         <obj_property name="ElementShortName">[12][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[12][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[13]" type="array">
+         <obj_property name="ElementShortName">[13][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[13][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[14]" type="array">
+         <obj_property name="ElementShortName">[14][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[14][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[15]" type="array">
+         <obj_property name="ElementShortName">[15][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[15][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[16]" type="array">
+         <obj_property name="ElementShortName">[16][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[16][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[17]" type="array">
+         <obj_property name="ElementShortName">[17][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[17][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[18]" type="array">
+         <obj_property name="ElementShortName">[18][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[18][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[19]" type="array">
+         <obj_property name="ElementShortName">[19][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[19][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[20]" type="array">
+         <obj_property name="ElementShortName">[20][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[20][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[21]" type="array">
+         <obj_property name="ElementShortName">[21][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[21][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[22]" type="array">
+         <obj_property name="ElementShortName">[22][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[22][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[23]" type="array">
+         <obj_property name="ElementShortName">[23][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[23][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[24]" type="array">
+         <obj_property name="ElementShortName">[24][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[24][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[25]" type="array">
+         <obj_property name="ElementShortName">[25][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[25][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[26]" type="array">
+         <obj_property name="ElementShortName">[26][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[26][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[27]" type="array">
+         <obj_property name="ElementShortName">[27][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[27][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[28]" type="array">
+         <obj_property name="ElementShortName">[28][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[28][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[29]" type="array">
+         <obj_property name="ElementShortName">[29][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[29][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[30]" type="array">
+         <obj_property name="ElementShortName">[30][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[30][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[31]" type="array">
+         <obj_property name="ElementShortName">[31][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[31][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[32]" type="array">
+         <obj_property name="ElementShortName">[32][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[32][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[33]" type="array">
+         <obj_property name="ElementShortName">[33][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[33][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[34]" type="array">
+         <obj_property name="ElementShortName">[34][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[34][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[35]" type="array">
+         <obj_property name="ElementShortName">[35][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[35][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[36]" type="array">
+         <obj_property name="ElementShortName">[36][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[36][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[37]" type="array">
+         <obj_property name="ElementShortName">[37][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[37][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[38]" type="array">
+         <obj_property name="ElementShortName">[38][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[38][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[39]" type="array">
+         <obj_property name="ElementShortName">[39][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[39][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[40]" type="array">
+         <obj_property name="ElementShortName">[40][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[40][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[41]" type="array">
+         <obj_property name="ElementShortName">[41][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[41][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[42]" type="array">
+         <obj_property name="ElementShortName">[42][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[42][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[43]" type="array">
+         <obj_property name="ElementShortName">[43][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[43][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[44]" type="array">
+         <obj_property name="ElementShortName">[44][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[44][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[45]" type="array">
+         <obj_property name="ElementShortName">[45][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[45][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[46]" type="array">
+         <obj_property name="ElementShortName">[46][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[46][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[47]" type="array">
+         <obj_property name="ElementShortName">[47][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[47][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[48]" type="array">
+         <obj_property name="ElementShortName">[48][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[48][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[49]" type="array">
+         <obj_property name="ElementShortName">[49][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[49][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[50]" type="array">
+         <obj_property name="ElementShortName">[50][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[50][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[51]" type="array">
+         <obj_property name="ElementShortName">[51][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[51][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[52]" type="array">
+         <obj_property name="ElementShortName">[52][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[52][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[53]" type="array">
+         <obj_property name="ElementShortName">[53][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[53][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[54]" type="array">
+         <obj_property name="ElementShortName">[54][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[54][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[55]" type="array">
+         <obj_property name="ElementShortName">[55][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[55][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[56]" type="array">
+         <obj_property name="ElementShortName">[56][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[56][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[57]" type="array">
+         <obj_property name="ElementShortName">[57][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[57][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[58]" type="array">
+         <obj_property name="ElementShortName">[58][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[58][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[59]" type="array">
+         <obj_property name="ElementShortName">[59][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[59][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[60]" type="array">
+         <obj_property name="ElementShortName">[60][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[60][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[61]" type="array">
+         <obj_property name="ElementShortName">[61][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[61][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[62]" type="array">
+         <obj_property name="ElementShortName">[62][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[62][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/a1/pdf0[63]" type="array">
+         <obj_property name="ElementShortName">[63][4:-38]</obj_property>
+         <obj_property name="ObjectShortName">[63][4:-38]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">38</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

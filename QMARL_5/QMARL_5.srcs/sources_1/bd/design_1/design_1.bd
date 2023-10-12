@@ -1334,6 +1334,12 @@
         "xci_path": "ip\\design_1_agent_0_0\\design_1_agent_0_0.xci",
         "inst_hier_path": "agent_0",
         "parameters": {
+          "alf": {
+            "value": "13"
+          },
+          "div": {
+            "value": "1"
+          },
           "res": {
             "value": "23"
           }

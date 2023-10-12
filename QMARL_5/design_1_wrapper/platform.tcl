@@ -24,3 +24,11 @@ platform config -updatehw {C:/Users/mlabadmin/Desktop/QMARL/QMARL_5/design_1_wra
 platform generate -domains 
 platform config -updatehw {C:/Users/mlabadmin/Desktop/QMARL/QMARL_5/design_1_wrapper.xsa}
 platform generate -domains 
+platform active {design_1_wrapper}
+platform config -updatehw {C:/Users/mlabadmin/Desktop/QMARL/QMARL_5/design_1_wrapper.xsa}
+platform generate -domains 
+platform active {design_1_wrapper}
+platform config -updatehw {C:/Users/mlabadmin/Desktop/QMARL/QMARL_5/design_1_wrapper.xsa}
+platform generate -domains freertos10_xilinx_ps7_cortexa9_0 
+platform config -updatehw {C:/Users/mlabadmin/Desktop/QMARL/QMARL_5/design_1_wrapper_12.xsa}
+platform generate -domains 
