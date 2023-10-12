@@ -1,3 +1,4 @@
+import time
 import numpy as np
 from tqdm import trange
 
@@ -49,9 +50,34 @@ def Numpy_QGT_Nplayers3(tipo, J_init, J_dg):
     prob = np.power(np.abs(outputstate),2)
     return prob
 
-"""
-Hacer un Numpy_QGT_Nplayers4 con temp2 = np.ones((2**(i+1), 2), dtype=np.cfloat)
-"""    
+def Numpy_QGT_Nplayers4(tipo, J_init, J_dg):
+    n_p = len(tipo) # Number of qubits
+
+    # Generate main operator with Kronecker products
+    temp1 = np.ones((1, 1), dtype=np.cfloat)
+    for i in range(n_p):
+        players_gate = general1qgate(tipo[i][0], tipo[i][1], tipo[i][2])
+        temp2 = np.ones((2**(i+1), 2), dtype=np.cfloat)
+        for j in range(2**i):
+              temp2[2*j,    0] = temp1[j, 0] * players_gate[0,0]
+              temp2[2*j+1,  0] = temp1[j, 0] * players_gate[1,0]
+              temp2[2*j,   -1] = temp1[j,-1] * players_gate[0,1]
+              temp2[2*j+1, -1] = temp1[j,-1] * players_gate[1,1]
+        temp1 = temp2
+
+    # Multiply main operator by initial quantum state
+    state_aux = np.zeros((2**n_p, 1), dtype=np.cfloat)
+    for i in range(2**n_p):
+        state_aux[i] = J_init[0] * temp1[i, 0] + J_init[-1] * temp1[i, 1]
+
+    # Calculate final quantum state
+    outputstate = np.zeros((2**n_p, 1), dtype=np.cfloat)
+    for i in range(2**n_p):
+      outputstate[i] = J_dg[i, i] * state_aux[i] + J_dg[i, 2**n_p - 1 - i] * state_aux[2**n_p - 1 - i]
+
+    # Calculate final probabilities
+    prob = np.power(np.abs(outputstate), 2)
+    return prob
 
 def matrix_reward(rotat, J_init, J_dg, game):  
   prob = Numpy_QGT_Nplayers2(rotat, J_init, J_dg)
@@ -65,7 +91,7 @@ def platonia_matrix(n):
     mm[2**i][n-i-1] = 10
   return  mm
 
-players = 4
+players = 5
 game    = platonia_matrix(players)
 gamma   = np.pi/2
 
@@ -80,5 +106,14 @@ rotat = np.random.uniform(0, 2*np.pi, [players, 3])
 #print(Numpy_QGT_Nplayers1(rotat, J_init, J_dg))
 #print(Numpy_QGT_Nplayers2(rotat, J_init, J_dg))
 #print(Numpy_QGT_Nplayers3(rotat, J_init, J_dg))
-print((Numpy_QGT_Nplayers1(rotat, J_init, J_dg) == Numpy_QGT_Nplayers2(rotat, J_init, J_dg)).all())
-print((Numpy_QGT_Nplayers3(rotat, J_init, J_dg) == Numpy_QGT_Nplayers2(rotat, J_init, J_dg)).all())
+#print(Numpy_QGT_Nplayers4(rotat, J_init, J_dg))
+
+start = time.time()
+a = Numpy_QGT_Nplayers1(rotat, J_init, J_dg)
+ta = time.time() - start
+
+start = time.time()
+b = Numpy_QGT_Nplayers4(rotat, J_init, J_dg)
+tb = time.time() - start
+
+print(ta, tb, np.sum(np.abs(a) - np.abs(b)))
