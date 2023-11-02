@@ -1,0 +1,159 @@
+
+
+================================================================
+== Synthesis Summary Report of 'qemulator'
+================================================================
++ General Information: 
+    * Date:           Fri Oct 20 12:01:18 2023
+    * Version:        2022.1 (Build 3526262 on Mon Apr 18 15:48:16 MDT 2022)
+    * Project:        Qemulator
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg484-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-------------+------+------+---------+---------+----------+---------+------+----------+------+----------+-----------+-----------+-----+
+    |   Modules   | Issue|      | Latency | Latency | Iteration|         | Trip |          |      |          |           |           |     |
+    |   & Loops   | Type | Slack| (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined| BRAM |    DSP   |     FF    |    LUT    | URAM|
+    +-------------+------+------+---------+---------+----------+---------+------+----------+------+----------+-----------+-----------+-----+
+    |+ qemulator  |     -|  4.16|       17|  170.000|         -|       18|     -|        no|     -|  28 (12%)|  290 (~0%)|  295 (~0%)|    -|
+    +-------------+------+------+---------+---------+----------+---------+------+----------+------+----------+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* REGISTER
++-----------+--------+----------+
+| Interface | Mode   | Bitwidth |
++-----------+--------+----------+
+| action1   | ap_vld | 9        |
+| action2   | ap_vld | 9        |
+| reward1   | ap_vld | 16       |
+| reward2   | ap_vld | 16       |
++-----------+--------+----------+
+
+* TOP LEVEL CONTROL
++-----------+--------------+--------+
+| Interface | Type         | Ports  |
++-----------+--------------+--------+
+| ap_clk    | clock        | ap_clk |
+| ap_rst    | reset        | ap_rst |
+| ap_ctrl   | ap_ctrl_none |        |
++-----------+--------------+--------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+--------------------------------------+
+| Argument | Direction | Datatype                             |
++----------+-----------+--------------------------------------+
+| action1  | in        | ap_uint<9> const                     |
+| action2  | in        | ap_uint<9> const                     |
+| reward1  | out       | ap_fixed<16, 5, AP_TRN, AP_WRAP, 0>* |
+| reward2  | out       | ap_fixed<16, 5, AP_TRN, AP_WRAP, 0>* |
++----------+-----------+--------------------------------------+
+
+* SW-to-HW Mapping
++----------+----------------+---------+
+| Argument | HW Interface   | HW Type |
++----------+----------------+---------+
+| action1  | action1        | port    |
+| action1  | action1_ap_vld | port    |
+| action2  | action2        | port    |
+| action2  | action2_ap_vld | port    |
+| reward1  | reward1        | port    |
+| reward1  | reward1_ap_vld | port    |
+| reward2  | reward2        | port    |
+| reward2  | reward2_ap_vld | port    |
++----------+----------------+---------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++-------------------------------------+-----+--------+---------------+-----+--------+---------+
+| Name                                | DSP | Pragma | Variable      | Op  | Impl   | Latency |
++-------------------------------------+-----+--------+---------------+-----+--------+---------+
+| + qemulator                         | 28  |        |               |     |        |         |
+|   u1_V_6_fu_288_p2                  | -   |        | u1_V_6        | sub | fabric | 0       |
+|   mul_mul_16s_16s_30_4_1_U1         | 1   |        | mul_ln1316    | mul | dsp48  | 3       |
+|   mul_mul_16s_16s_30_4_1_U2         | 1   |        | mul_ln1316_1  | mul | dsp48  | 3       |
+|   mul_mul_16s_16s_30_4_1_U3         | 1   |        | mul_ln1316_2  | mul | dsp48  | 3       |
+|   mul_mul_16s_16s_30_4_1_U4         | 1   |        | mul_ln1316_3  | mul | dsp48  | 3       |
+|   u2_V_1_fu_329_p2                  | -   |        | u2_V_1        | sub | fabric | 0       |
+|   mul_mul_16s_16s_30_4_1_U5         | 1   |        | mul_ln1316_4  | mul | dsp48  | 3       |
+|   mul_mul_16s_16s_30_4_1_U6         | 1   |        | mul_ln1316_5  | mul | dsp48  | 3       |
+|   mul_mul_16s_16s_30_4_1_U7         | 1   |        | mul_ln1316_6  | mul | dsp48  | 3       |
+|   mul_mul_16s_16s_30_4_1_U8         | 1   |        | mul_ln1316_7  | mul | dsp48  | 3       |
+|   mul_mul_16s_16s_30_4_1_U9         | 1   |        | mul_ln1316_8  | mul | dsp48  | 3       |
+|   mul_mul_16s_16s_30_4_1_U10        | 1   |        | mul_ln1316_9  | mul | dsp48  | 3       |
+|   mul_mul_16s_16s_30_4_1_U11        | 1   |        | mul_ln1316_10 | mul | dsp48  | 3       |
+|   mul_mul_16s_16s_30_4_1_U12        | 1   |        | mul_ln1316_11 | mul | dsp48  | 3       |
+|   mul_mul_16s_16s_30_4_1_U13        | 1   |        | mul_ln1316_12 | mul | dsp48  | 3       |
+|   mul_mul_16s_16s_30_4_1_U14        | 1   |        | mul_ln1316_13 | mul | dsp48  | 3       |
+|   mul_mul_16s_16s_30_4_1_U15        | 1   |        | mul_ln1316_14 | mul | dsp48  | 3       |
+|   mul_mul_16s_16s_30_4_1_U16        | 1   |        | mul_ln1316_15 | mul | dsp48  | 3       |
+|   am_addmul_16s_16s_14ns_30_4_1_U17 | 1   |        | ret_V_2       | add | dsp48  | 3       |
+|   am_addmul_16s_16s_14ns_30_4_1_U17 | 1   |        | mul_ln1316_16 | mul | dsp48  | 3       |
+|   am_submul_16s_16s_14ns_30_4_1_U18 | 1   |        | ret_V_3       | sub | dsp48  | 3       |
+|   am_submul_16s_16s_14ns_30_4_1_U18 | 1   |        | mul_ln1316_17 | mul | dsp48  | 3       |
+|   am_addmul_16s_16s_14ns_30_4_1_U19 | 1   |        | ret_V_4       | add | dsp48  | 3       |
+|   am_addmul_16s_16s_14ns_30_4_1_U19 | 1   |        | mul_ln1316_18 | mul | dsp48  | 3       |
+|   am_submul_16s_16s_14ns_30_4_1_U20 | 1   |        | ret_V_5       | sub | dsp48  | 3       |
+|   am_submul_16s_16s_14ns_30_4_1_U20 | 1   |        | mul_ln1316_19 | mul | dsp48  | 3       |
+|   am_addmul_16s_16s_14ns_30_4_1_U21 | 1   |        | ret_V_6       | add | dsp48  | 3       |
+|   am_addmul_16s_16s_14ns_30_4_1_U21 | 1   |        | mul_ln1316_20 | mul | dsp48  | 3       |
+|   am_submul_16s_16s_14ns_30_4_1_U22 | 1   |        | ret_V_7       | sub | dsp48  | 3       |
+|   am_submul_16s_16s_14ns_30_4_1_U22 | 1   |        | mul_ln1316_21 | mul | dsp48  | 3       |
+|   am_addmul_16s_16s_14ns_30_4_1_U23 | 1   |        | ret_V_8       | add | dsp48  | 3       |
+|   am_addmul_16s_16s_14ns_30_4_1_U23 | 1   |        | mul_ln1316_22 | mul | dsp48  | 3       |
+|   am_submul_16s_16s_14ns_30_4_1_U24 | 1   |        | ret_V_9       | sub | dsp48  | 3       |
+|   am_submul_16s_16s_14ns_30_4_1_U24 | 1   |        | mul_ln1316_23 | mul | dsp48  | 3       |
+|   mul_mul_16s_16s_30_4_1_U25        | 1   |        | mul_ln859     | mul | dsp48  | 3       |
+|   mac_muladd_16s_16s_30s_30_4_1_U27 | 1   |        | mul_ln1393    | mul | dsp48  | 3       |
+|   mac_muladd_16s_16s_30s_30_4_1_U27 | 1   |        | ret_V_10      | add | dsp48  | 3       |
+|   mul_mul_16s_16s_30_4_1_U26        | 1   |        | mul_ln859_1   | mul | dsp48  | 3       |
+|   mac_muladd_16s_16s_30s_30_4_1_U28 | 1   |        | mul_ln1393_1  | mul | dsp48  | 3       |
+|   mac_muladd_16s_16s_30s_30_4_1_U28 | 1   |        | ret_V_11      | add | dsp48  | 3       |
+|   r_V_14_fu_645_p2                  | -   |        | r_V_14        | add | fabric | 0       |
+|   r_V_15_fu_691_p2                  | -   |        | r_V_15        | add | fabric | 0       |
++-------------------------------------+-----+--------+---------------+-----+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
++-------------+------+------+--------+----------+---------+------+---------+
+| Name        | BRAM | URAM | Pragma | Variable | Storage | Impl | Latency |
++-------------+------+------+--------+----------+---------+------+---------+
+| + qemulator | 0    | 0    |        |          |         |      |         |
+|   cos_hw_U  | -    | -    |        | cos_hw   | rom_np  | auto | 1       |
+|   sin_hw_U  | -    | -    |        | sin_hw   | rom_np  | auto | 1       |
++-------------+------+------+--------+----------+---------+------+---------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+-------------------------------+---------------------------------------------+
+| Type      | Options                       | Location                                    |
++-----------+-------------------------------+---------------------------------------------+
+| interface | mode=ap_ctrl_none port=return | Qemulator/main.cpp:12 in qemulator, return  |
+| interface | mode=ap_vld port=reward2      | Qemulator/main.cpp:13 in qemulator, reward2 |
+| interface | mode=ap_vld port=reward1      | Qemulator/main.cpp:14 in qemulator, reward1 |
+| interface | mode=ap_vld port=action2      | Qemulator/main.cpp:15 in qemulator, action2 |
+| interface | mode=ap_vld port=action1      | Qemulator/main.cpp:16 in qemulator, action1 |
+| unroll    |                               | Qemulator/main.cpp:35 in qemulator          |
+| unroll    |                               | Qemulator/main.cpp:52 in qemulator          |
+| unroll    |                               | Qemulator/main.cpp:60 in qemulator          |
+| unroll    |                               | Qemulator/main.cpp:67 in qemulator          |
++-----------+-------------------------------+---------------------------------------------+
+
+

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="fixed_pkg" />
+            <top_module name="glbl" />
+            <top_module name="tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000000 ms"></ZoomStartTime>
+      <ZoomEndTime time="61.600000001 ms"></ZoomEndTime>
+      <Cursor1Time time="30.786770000 ms"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="259"></NameColumnWidth>
+      <ValueColumnWidth column_width="110"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="5" />
+   <wvobject fp_name="/tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="group221" type="group">
+      <obj_property name="label">QEMULATOR</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="divider" fp_name="divider27">
+         <obj_property name="label">QEMULATOR</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#0000FF</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/qemu/action1" type="array">
+         <obj_property name="ElementShortName">action1[8:0]</obj_property>
+         <obj_property name="ObjectShortName">action1[8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/qemu/action1_ap_vld" type="logic">
+         <obj_property name="ElementShortName">action1_ap_vld</obj_property>
+         <obj_property name="ObjectShortName">action1_ap_vld</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/qemu/action2" type="array">
+         <obj_property name="ElementShortName">action2[8:0]</obj_property>
+         <obj_property name="ObjectShortName">action2[8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/qemu/action2_ap_vld" type="logic">
+         <obj_property name="ElementShortName">action2_ap_vld</obj_property>
+         <obj_property name="ObjectShortName">action2_ap_vld</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/qemu/reward1" type="array">
+         <obj_property name="ElementShortName">reward1[15:0]</obj_property>
+         <obj_property name="ObjectShortName">reward1[15:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">11</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/qemu/reward1_ap_vld" type="logic">
+         <obj_property name="ElementShortName">reward1_ap_vld</obj_property>
+         <obj_property name="ObjectShortName">reward1_ap_vld</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/qemu/reward2" type="array">
+         <obj_property name="ElementShortName">reward2[15:0]</obj_property>
+         <obj_property name="ObjectShortName">reward2[15:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">11</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/qemu/reward2_ap_vld" type="logic">
+         <obj_property name="ElementShortName">reward2_ap_vld</obj_property>
+         <obj_property name="ObjectShortName">reward2_ap_vld</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group222" type="group">
+      <obj_property name="label">AGENTS</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="divider" fp_name="divider25">
+         <obj_property name="label">AGENT 1</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#FF0000</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/ag1/val" type="logic">
+         <obj_property name="ElementShortName">val</obj_property>
+         <obj_property name="ObjectShortName">val</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/ag1/reward" type="array">
+         <obj_property name="ElementShortName">reward[15:0]</obj_property>
+         <obj_property name="ObjectShortName">reward[15:0]</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+         <obj_property name="AnalogYRangeMin">0.000000</obj_property>
+         <obj_property name="AnalogYRRangeMax">0.000000</obj_property>
+         <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_LINEAR</obj_property>
+         <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+         <obj_property name="AnalogHorizLine">0.000000</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/ag1/action" type="array">
+         <obj_property name="ElementShortName">action[8:0]</obj_property>
+         <obj_property name="ObjectShortName">action[8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/ag1/done" type="logic">
+         <obj_property name="ElementShortName">done</obj_property>
+         <obj_property name="ObjectShortName">done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/ag1/state" type="other">
+         <obj_property name="ElementShortName">state</obj_property>
+         <obj_property name="ObjectShortName">state</obj_property>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider26">
+         <obj_property name="label">AGENT 2</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#008000</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/ag2/val" type="logic">
+         <obj_property name="ElementShortName">val</obj_property>
+         <obj_property name="ObjectShortName">val</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/ag2/reward" type="array">
+         <obj_property name="ElementShortName">reward[15:0]</obj_property>
+         <obj_property name="ObjectShortName">reward[15:0]</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+         <obj_property name="AnalogYRangeMin">0.000000</obj_property>
+         <obj_property name="AnalogYRRangeMax">0.000000</obj_property>
+         <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_LINEAR</obj_property>
+         <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+         <obj_property name="AnalogHorizLine">0.000000</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/ag2/action" type="array">
+         <obj_property name="ElementShortName">action[8:0]</obj_property>
+         <obj_property name="ObjectShortName">action[8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/ag2/done" type="logic">
+         <obj_property name="ElementShortName">done</obj_property>
+         <obj_property name="ObjectShortName">done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/ag2/state" type="other">
+         <obj_property name="ElementShortName">state</obj_property>
+         <obj_property name="ObjectShortName">state</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group223" type="group">
+      <obj_property name="label">CONTROL</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="divider" fp_name="divider307">
+         <obj_property name="label">AUX</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/qemu2ages/avg_out1" type="array">
+         <obj_property name="ElementShortName">avg_out1[15:0]</obj_property>
+         <obj_property name="ObjectShortName">avg_out1[15:0]</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+         <obj_property name="CellHeight">100</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">11</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/qemu2ages/avg_out2" type="array">
+         <obj_property name="ElementShortName">avg_out2[15:0]</obj_property>
+         <obj_property name="ObjectShortName">avg_out2[15:0]</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+         <obj_property name="CellHeight">100</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">11</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/done" type="logic">
+         <obj_property name="ElementShortName">done</obj_property>
+         <obj_property name="ObjectShortName">done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/qemu2ages/val1" type="logic">
+         <obj_property name="ElementShortName">val1</obj_property>
+         <obj_property name="ObjectShortName">val1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/qemu2ages/val2" type="logic">
+         <obj_property name="ElementShortName">val2</obj_property>
+         <obj_property name="ObjectShortName">val2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/counter" type="array">
+         <obj_property name="ElementShortName">counter[31:0]</obj_property>
+         <obj_property name="ObjectShortName">counter[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/qemu2ages/count" type="array">
+         <obj_property name="ElementShortName">count[31:0]</obj_property>
+         <obj_property name="ObjectShortName">count[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/qemu2ages/state" type="other">
+         <obj_property name="ElementShortName">state</obj_property>
+         <obj_property name="ObjectShortName">state</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

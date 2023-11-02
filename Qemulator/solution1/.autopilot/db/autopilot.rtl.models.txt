@@ -1,0 +1,7 @@
+qemulator_mul_mul_16s_16s_30_4_1
+qemulator_am_addmul_16s_16s_14ns_30_4_1
+qemulator_am_submul_16s_16s_14ns_30_4_1
+qemulator_mac_muladd_16s_16s_30s_30_4_1
+qemulator_cos_hw_ROM_AUTO_1R
+qemulator_sin_hw_ROM_AUTO_1R
+qemulator

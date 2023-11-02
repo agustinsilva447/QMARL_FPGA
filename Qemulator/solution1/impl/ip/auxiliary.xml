@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="qemulator" xd:componentRef="qemulator" xd:initiationInterval="18" xd:clockPeriod="10" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:arg xd:name="*(action1)" xd:originalName="action1" xd:direction="in" xd:interfaceRef="action1" xd:busTypeRef="register" xd:handshakeRef="ap_vld" xd:dataWidth="9"/>
+  <xd:arg xd:name="*(action2)" xd:originalName="action2" xd:direction="in" xd:interfaceRef="action2" xd:busTypeRef="register" xd:handshakeRef="ap_vld" xd:dataWidth="9"/>
+  <xd:arg xd:name="*(reward1)" xd:originalName="reward1" xd:direction="out" xd:interfaceRef="reward1" xd:busTypeRef="register" xd:handshakeRef="ap_vld" xd:dataWidth="16"/>
+  <xd:arg xd:name="*(reward2)" xd:originalName="reward2" xd:direction="out" xd:interfaceRef="reward2" xd:busTypeRef="register" xd:handshakeRef="ap_vld" xd:dataWidth="16"/>
+  <xd:latencyEstimates xd:best-case="17" xd:worst-case="17" xd:average-case="17"/>
+  <xd:resourceEstimates xd:LUT="295" xd:FF="290" xd:BRAM="0" xd:DSP="28"/>
+</xd:acceleratorMap>

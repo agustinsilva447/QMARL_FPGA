@@ -1,0 +1,756 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Fri Oct 20 12:51:04 2023
+# Process ID: 99656
+# Current directory: C:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.runs/design_1_qemulator_0_3_synth_1
+# Command line: vivado.exe -log design_1_qemulator_0_3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_qemulator_0_3.tcl
+# Log file: C:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.runs/design_1_qemulator_0_3_synth_1/design_1_qemulator_0_3.vds
+# Journal file: C:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.runs/design_1_qemulator_0_3_synth_1\vivado.jou
+# Running On: hp6g4-step-1, OS: Windows, CPU Frequency: 3192 MHz, CPU Physical cores: 6, Host memory: 16948 MB
+#-----------------------------------------------------------
+source design_1_qemulator_0_3.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1480.816 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.runs/design_1_qemulator_0_3_synth_1'.)
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/mlabadmin/Downloads/core-comblock'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2022.1/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:01 ; elapsed = 00:00:20 . Memory (MB): peak = 1480.816 ; gain = 0.000
+Command: synth_design -top design_1_qemulator_0_3 -part xc7z020clg484-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 116480
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:04:09 . Memory (MB): peak = 1933.852 ; gain = 389.809
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_qemulator_0_3' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ip/design_1_qemulator_0_3/synth/design_1_qemulator_0_3.vhd:71]
+INFO: [Synth 8-3491] module 'qemulator' declared at 'c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator.vhd:12' bound to instance 'U0' of component 'qemulator' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ip/design_1_qemulator_0_3/synth/design_1_qemulator_0_3.vhd:117]
+INFO: [Synth 8-638] synthesizing module 'qemulator' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator.vhd:27]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'qemulator_cos_hw_ROM_AUTO_1R' declared at 'c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_cos_hw_ROM_AUTO_1R.vhd:10' bound to instance 'cos_hw_U' of component 'qemulator_cos_hw_ROM_AUTO_1R' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator.vhd:416]
+INFO: [Synth 8-638] synthesizing module 'qemulator_cos_hw_ROM_AUTO_1R' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_cos_hw_ROM_AUTO_1R.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'qemulator_cos_hw_ROM_AUTO_1R' (0#1) [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_cos_hw_ROM_AUTO_1R.vhd:35]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'qemulator_sin_hw_ROM_AUTO_1R' declared at 'c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_sin_hw_ROM_AUTO_1R.vhd:10' bound to instance 'sin_hw_U' of component 'qemulator_sin_hw_ROM_AUTO_1R' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator.vhd:437]
+INFO: [Synth 8-638] synthesizing module 'qemulator_sin_hw_ROM_AUTO_1R' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_sin_hw_ROM_AUTO_1R.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'qemulator_sin_hw_ROM_AUTO_1R' (0#1) [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_sin_hw_ROM_AUTO_1R.vhd:35]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter dout_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-3491] module 'qemulator_mul_mul_16s_16s_30_4_1' declared at 'c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_mul_mul_16s_16s_30_4_1.vhd:51' bound to instance 'mul_mul_16s_16s_30_4_1_U1' of component 'qemulator_mul_mul_16s_16s_30_4_1' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator.vhd:458]
+INFO: [Synth 8-638] synthesizing module 'qemulator_mul_mul_16s_16s_30_4_1' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_mul_mul_16s_16s_30_4_1.vhd:67]
+INFO: [Synth 8-3491] module 'qemulator_mul_mul_16s_16s_30_4_1_DSP48_0' declared at 'c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_mul_mul_16s_16s_30_4_1.vhd:6' bound to instance 'qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U' of component 'qemulator_mul_mul_16s_16s_30_4_1_DSP48_0' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_mul_mul_16s_16s_30_4_1.vhd:81]
+INFO: [Synth 8-638] synthesizing module 'qemulator_mul_mul_16s_16s_30_4_1_DSP48_0' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_mul_mul_16s_16s_30_4_1.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'qemulator_mul_mul_16s_16s_30_4_1_DSP48_0' (0#1) [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_mul_mul_16s_16s_30_4_1.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'qemulator_mul_mul_16s_16s_30_4_1' (0#1) [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_mul_mul_16s_16s_30_4_1.vhd:67]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter dout_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-3491] module 'qemulator_mul_mul_16s_16s_30_4_1' declared at 'c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_mul_mul_16s_16s_30_4_1.vhd:51' bound to instance 'mul_mul_16s_16s_30_4_1_U2' of component 'qemulator_mul_mul_16s_16s_30_4_1' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator.vhd:473]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter dout_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-3491] module 'qemulator_mul_mul_16s_16s_30_4_1' declared at 'c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_mul_mul_16s_16s_30_4_1.vhd:51' bound to instance 'mul_mul_16s_16s_30_4_1_U3' of component 'qemulator_mul_mul_16s_16s_30_4_1' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator.vhd:488]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter dout_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-3491] module 'qemulator_mul_mul_16s_16s_30_4_1' declared at 'c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_mul_mul_16s_16s_30_4_1.vhd:51' bound to instance 'mul_mul_16s_16s_30_4_1_U4' of component 'qemulator_mul_mul_16s_16s_30_4_1' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator.vhd:503]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter dout_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-3491] module 'qemulator_mul_mul_16s_16s_30_4_1' declared at 'c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_mul_mul_16s_16s_30_4_1.vhd:51' bound to instance 'mul_mul_16s_16s_30_4_1_U5' of component 'qemulator_mul_mul_16s_16s_30_4_1' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator.vhd:518]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter dout_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-3491] module 'qemulator_mul_mul_16s_16s_30_4_1' declared at 'c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_mul_mul_16s_16s_30_4_1.vhd:51' bound to instance 'mul_mul_16s_16s_30_4_1_U6' of component 'qemulator_mul_mul_16s_16s_30_4_1' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator.vhd:533]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter dout_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-3491] module 'qemulator_mul_mul_16s_16s_30_4_1' declared at 'c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_mul_mul_16s_16s_30_4_1.vhd:51' bound to instance 'mul_mul_16s_16s_30_4_1_U7' of component 'qemulator_mul_mul_16s_16s_30_4_1' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator.vhd:548]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter dout_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-3491] module 'qemulator_mul_mul_16s_16s_30_4_1' declared at 'c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_mul_mul_16s_16s_30_4_1.vhd:51' bound to instance 'mul_mul_16s_16s_30_4_1_U8' of component 'qemulator_mul_mul_16s_16s_30_4_1' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator.vhd:563]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter dout_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-3491] module 'qemulator_mul_mul_16s_16s_30_4_1' declared at 'c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_mul_mul_16s_16s_30_4_1.vhd:51' bound to instance 'mul_mul_16s_16s_30_4_1_U9' of component 'qemulator_mul_mul_16s_16s_30_4_1' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator.vhd:578]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter dout_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-3491] module 'qemulator_mul_mul_16s_16s_30_4_1' declared at 'c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_mul_mul_16s_16s_30_4_1.vhd:51' bound to instance 'mul_mul_16s_16s_30_4_1_U10' of component 'qemulator_mul_mul_16s_16s_30_4_1' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator.vhd:593]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter dout_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-3491] module 'qemulator_mul_mul_16s_16s_30_4_1' declared at 'c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_mul_mul_16s_16s_30_4_1.vhd:51' bound to instance 'mul_mul_16s_16s_30_4_1_U11' of component 'qemulator_mul_mul_16s_16s_30_4_1' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator.vhd:608]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter dout_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-3491] module 'qemulator_mul_mul_16s_16s_30_4_1' declared at 'c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_mul_mul_16s_16s_30_4_1.vhd:51' bound to instance 'mul_mul_16s_16s_30_4_1_U12' of component 'qemulator_mul_mul_16s_16s_30_4_1' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator.vhd:623]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter dout_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-3491] module 'qemulator_mul_mul_16s_16s_30_4_1' declared at 'c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_mul_mul_16s_16s_30_4_1.vhd:51' bound to instance 'mul_mul_16s_16s_30_4_1_U13' of component 'qemulator_mul_mul_16s_16s_30_4_1' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator.vhd:638]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter dout_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-3491] module 'qemulator_mul_mul_16s_16s_30_4_1' declared at 'c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_mul_mul_16s_16s_30_4_1.vhd:51' bound to instance 'mul_mul_16s_16s_30_4_1_U14' of component 'qemulator_mul_mul_16s_16s_30_4_1' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator.vhd:653]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter dout_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-3491] module 'qemulator_mul_mul_16s_16s_30_4_1' declared at 'c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_mul_mul_16s_16s_30_4_1.vhd:51' bound to instance 'mul_mul_16s_16s_30_4_1_U15' of component 'qemulator_mul_mul_16s_16s_30_4_1' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator.vhd:668]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter dout_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-3491] module 'qemulator_mul_mul_16s_16s_30_4_1' declared at 'c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_mul_mul_16s_16s_30_4_1.vhd:51' bound to instance 'mul_mul_16s_16s_30_4_1_U16' of component 'qemulator_mul_mul_16s_16s_30_4_1' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator.vhd:683]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter din2_WIDTH bound to: 14 - type: integer 
+	Parameter dout_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-3491] module 'qemulator_am_addmul_16s_16s_14ns_30_4_1' declared at 'c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_am_addmul_16s_16s_14ns_30_4_1.vhd:57' bound to instance 'am_addmul_16s_16s_14ns_30_4_1_U17' of component 'qemulator_am_addmul_16s_16s_14ns_30_4_1' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator.vhd:698]
+INFO: [Synth 8-638] synthesizing module 'qemulator_am_addmul_16s_16s_14ns_30_4_1' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_am_addmul_16s_16s_14ns_30_4_1.vhd:75]
+INFO: [Synth 8-3491] module 'qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1' declared at 'c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_am_addmul_16s_16s_14ns_30_4_1.vhd:10' bound to instance 'qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U' of component 'qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_am_addmul_16s_16s_14ns_30_4_1.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_am_addmul_16s_16s_14ns_30_4_1.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1' (0#1) [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_am_addmul_16s_16s_14ns_30_4_1.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'qemulator_am_addmul_16s_16s_14ns_30_4_1' (0#1) [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_am_addmul_16s_16s_14ns_30_4_1.vhd:75]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter din2_WIDTH bound to: 14 - type: integer 
+	Parameter dout_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-3491] module 'qemulator_am_submul_16s_16s_14ns_30_4_1' declared at 'c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_am_submul_16s_16s_14ns_30_4_1.vhd:57' bound to instance 'am_submul_16s_16s_14ns_30_4_1_U18' of component 'qemulator_am_submul_16s_16s_14ns_30_4_1' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator.vhd:715]
+INFO: [Synth 8-638] synthesizing module 'qemulator_am_submul_16s_16s_14ns_30_4_1' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_am_submul_16s_16s_14ns_30_4_1.vhd:75]
+INFO: [Synth 8-3491] module 'qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2' declared at 'c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_am_submul_16s_16s_14ns_30_4_1.vhd:10' bound to instance 'qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U' of component 'qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_am_submul_16s_16s_14ns_30_4_1.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_am_submul_16s_16s_14ns_30_4_1.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2' (0#1) [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_am_submul_16s_16s_14ns_30_4_1.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'qemulator_am_submul_16s_16s_14ns_30_4_1' (0#1) [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_am_submul_16s_16s_14ns_30_4_1.vhd:75]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter din2_WIDTH bound to: 14 - type: integer 
+	Parameter dout_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-3491] module 'qemulator_am_addmul_16s_16s_14ns_30_4_1' declared at 'c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_am_addmul_16s_16s_14ns_30_4_1.vhd:57' bound to instance 'am_addmul_16s_16s_14ns_30_4_1_U19' of component 'qemulator_am_addmul_16s_16s_14ns_30_4_1' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator.vhd:732]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter din2_WIDTH bound to: 14 - type: integer 
+	Parameter dout_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-3491] module 'qemulator_am_submul_16s_16s_14ns_30_4_1' declared at 'c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_am_submul_16s_16s_14ns_30_4_1.vhd:57' bound to instance 'am_submul_16s_16s_14ns_30_4_1_U20' of component 'qemulator_am_submul_16s_16s_14ns_30_4_1' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator.vhd:749]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter din2_WIDTH bound to: 14 - type: integer 
+	Parameter dout_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-3491] module 'qemulator_am_addmul_16s_16s_14ns_30_4_1' declared at 'c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_am_addmul_16s_16s_14ns_30_4_1.vhd:57' bound to instance 'am_addmul_16s_16s_14ns_30_4_1_U21' of component 'qemulator_am_addmul_16s_16s_14ns_30_4_1' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator.vhd:766]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter din2_WIDTH bound to: 14 - type: integer 
+	Parameter dout_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-3491] module 'qemulator_am_submul_16s_16s_14ns_30_4_1' declared at 'c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_am_submul_16s_16s_14ns_30_4_1.vhd:57' bound to instance 'am_submul_16s_16s_14ns_30_4_1_U22' of component 'qemulator_am_submul_16s_16s_14ns_30_4_1' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator.vhd:783]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter din2_WIDTH bound to: 14 - type: integer 
+	Parameter dout_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-3491] module 'qemulator_am_addmul_16s_16s_14ns_30_4_1' declared at 'c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_am_addmul_16s_16s_14ns_30_4_1.vhd:57' bound to instance 'am_addmul_16s_16s_14ns_30_4_1_U23' of component 'qemulator_am_addmul_16s_16s_14ns_30_4_1' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator.vhd:800]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter din2_WIDTH bound to: 14 - type: integer 
+	Parameter dout_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-3491] module 'qemulator_am_submul_16s_16s_14ns_30_4_1' declared at 'c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_am_submul_16s_16s_14ns_30_4_1.vhd:57' bound to instance 'am_submul_16s_16s_14ns_30_4_1_U24' of component 'qemulator_am_submul_16s_16s_14ns_30_4_1' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator.vhd:817]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter dout_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-3491] module 'qemulator_mul_mul_16s_16s_30_4_1' declared at 'c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_mul_mul_16s_16s_30_4_1.vhd:51' bound to instance 'mul_mul_16s_16s_30_4_1_U25' of component 'qemulator_mul_mul_16s_16s_30_4_1' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator.vhd:834]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter dout_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-3491] module 'qemulator_mul_mul_16s_16s_30_4_1' declared at 'c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_mul_mul_16s_16s_30_4_1.vhd:51' bound to instance 'mul_mul_16s_16s_30_4_1_U26' of component 'qemulator_mul_mul_16s_16s_30_4_1' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator.vhd:849]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter din2_WIDTH bound to: 30 - type: integer 
+	Parameter dout_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-3491] module 'qemulator_mac_muladd_16s_16s_30s_30_4_1' declared at 'c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_mac_muladd_16s_16s_30s_30_4_1.vhd:57' bound to instance 'mac_muladd_16s_16s_30s_30_4_1_U27' of component 'qemulator_mac_muladd_16s_16s_30s_30_4_1' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator.vhd:864]
+INFO: [Synth 8-638] synthesizing module 'qemulator_mac_muladd_16s_16s_30s_30_4_1' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_mac_muladd_16s_16s_30s_30_4_1.vhd:75]
+INFO: [Synth 8-3491] module 'qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3' declared at 'c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_mac_muladd_16s_16s_30s_30_4_1.vhd:10' bound to instance 'qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3_U' of component 'qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_mac_muladd_16s_16s_30s_30_4_1.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_mac_muladd_16s_16s_30s_30_4_1.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3' (0#1) [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_mac_muladd_16s_16s_30s_30_4_1.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'qemulator_mac_muladd_16s_16s_30s_30_4_1' (0#1) [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_mac_muladd_16s_16s_30s_30_4_1.vhd:75]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter din2_WIDTH bound to: 30 - type: integer 
+	Parameter dout_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-3491] module 'qemulator_mac_muladd_16s_16s_30s_30_4_1' declared at 'c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_mac_muladd_16s_16s_30s_30_4_1.vhd:57' bound to instance 'mac_muladd_16s_16s_30s_30_4_1_U28' of component 'qemulator_mac_muladd_16s_16s_30s_30_4_1' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator.vhd:881]
+INFO: [Synth 8-256] done synthesizing module 'qemulator' (0#1) [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'design_1_qemulator_0_3' (0#1) [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ip/design_1_qemulator_0_3/synth/design_1_qemulator_0_3.vhd:71]
+WARNING: [Synth 8-3936] Found unconnected internal register 'action1_in_sig_reg' and it is trimmed from '9' to '7' bits. [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator.vhd:1041]
+WARNING: [Synth 8-3936] Found unconnected internal register 'action2_in_sig_reg' and it is trimmed from '9' to '7' bits. [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator.vhd:1042]
+WARNING: [Synth 8-7129] Port rst in module qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module qemulator_mul_mul_16s_16s_30_4_1_DSP48_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module qemulator_sin_hw_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module qemulator_cos_hw_ROM_AUTO_1R is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:04:25 . Memory (MB): peak = 2023.813 ; gain = 479.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:04:26 . Memory (MB): peak = 2041.680 ; gain = 497.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:04:26 . Memory (MB): peak = 2041.680 ; gain = 497.637
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 2041.680 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ip/design_1_qemulator_0_3/constraints/qemulator_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ip/design_1_qemulator_0_3/constraints/qemulator_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.runs/design_1_qemulator_0_3_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.runs/design_1_qemulator_0_3_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2154.410 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 2154.430 ; gain = 0.020
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:05:19 . Memory (MB): peak = 2154.430 ; gain = 610.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:05:19 . Memory (MB): peak = 2154.430 ; gain = 610.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  C:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.runs/design_1_qemulator_0_3_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:05:20 . Memory (MB): peak = 2154.430 ; gain = 610.387
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'p_reg_reg' and it is trimmed from '48' to '30' bits. [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_am_addmul_16s_16s_14ns_30_4_1.vhd:46]
+WARNING: [Synth 8-3936] Found unconnected internal register 'p_reg_reg' and it is trimmed from '48' to '30' bits. [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_am_submul_16s_16s_14ns_30_4_1.vhd:46]
+WARNING: [Synth 8-3936] Found unconnected internal register 'p_reg_reg' and it is trimmed from '48' to '30' bits. [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_mac_muladd_16s_16s_30s_30_4_1.vhd:46]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm_reg_reg' and it is trimmed from '43' to '30' bits. [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_mac_muladd_16s_16s_30s_30_4_1.vhd:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'sext_ln1319_6_reg_1006_reg' and it is trimmed from '30' to '16' bits. [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator.vhd:987]
+WARNING: [Synth 8-3936] Found unconnected internal register 'sext_ln1319_2_reg_975_reg' and it is trimmed from '30' to '16' bits. [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator.vhd:986]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:05:21 . Memory (MB): peak = 2154.430 ; gain = 610.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   30 Bit       Adders := 2     
++---Registers : 
+	               18 Bit    Registers := 7     
+	               16 Bit    Registers := 32    
+	                9 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  19 Input   18 Bit        Muxes := 1     
+	  17 Input   16 Bit        Muxes := 8     
+	   2 Input    7 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'am_submul_16s_16s_14ns_30_4_1_U24/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/m_reg_reg' and it is trimmed from '43' to '30' bits. [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_am_submul_16s_16s_14ns_30_4_1.vhd:43]
+WARNING: [Synth 8-3936] Found unconnected internal register 'am_addmul_16s_16s_14ns_30_4_1_U21/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/m_reg_reg' and it is trimmed from '43' to '30' bits. [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_am_addmul_16s_16s_14ns_30_4_1.vhd:43]
+WARNING: [Synth 8-3936] Found unconnected internal register 'am_submul_16s_16s_14ns_30_4_1_U20/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/m_reg_reg' and it is trimmed from '43' to '30' bits. [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_am_submul_16s_16s_14ns_30_4_1.vhd:43]
+WARNING: [Synth 8-3936] Found unconnected internal register 'am_addmul_16s_16s_14ns_30_4_1_U23/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/m_reg_reg' and it is trimmed from '43' to '30' bits. [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_am_addmul_16s_16s_14ns_30_4_1.vhd:43]
+WARNING: [Synth 8-3936] Found unconnected internal register 'am_submul_16s_16s_14ns_30_4_1_U22/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/m_reg_reg' and it is trimmed from '43' to '30' bits. [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_am_submul_16s_16s_14ns_30_4_1.vhd:43]
+WARNING: [Synth 8-3936] Found unconnected internal register 'am_addmul_16s_16s_14ns_30_4_1_U19/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/m_reg_reg' and it is trimmed from '43' to '30' bits. [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_am_addmul_16s_16s_14ns_30_4_1.vhd:43]
+WARNING: [Synth 8-3936] Found unconnected internal register 'am_addmul_16s_16s_14ns_30_4_1_U17/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/m_reg_reg' and it is trimmed from '43' to '30' bits. [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_am_addmul_16s_16s_14ns_30_4_1.vhd:43]
+WARNING: [Synth 8-3936] Found unconnected internal register 'am_submul_16s_16s_14ns_30_4_1_U18/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/m_reg_reg' and it is trimmed from '43' to '30' bits. [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_am_submul_16s_16s_14ns_30_4_1.vhd:43]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_16s_16s_30_4_1_U26/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_mul_mul_16s_16s_30_4_1.vhd:36]
+WARNING: [Synth 8-6014] Unused sequential element mul_mul_16s_16s_30_4_1_U25/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_tmp_reg was removed.  [c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.gen/sources_1/bd/design_1/ipshared/403d/hdl/vhdl/qemulator_mul_mul_16s_16s_30_4_1.vhd:36]
+DSP Report: Generating DSP mul_mul_16s_16s_30_4_1_U3/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (A''*B'')'.
+DSP Report: register sin_hw_U/q3_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U3/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U1/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U3/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register sin_hw_U/q2_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U3/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U3/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/a_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U3/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U3/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U3/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U3/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_tmp_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U3/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mul_mul_16s_16s_30_4_1_U3/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_cvt is absorbed into DSP mul_mul_16s_16s_30_4_1_U3/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: Generating DSP mul_mul_16s_16s_30_4_1_U14/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (A2*B'')'.
+DSP Report: register mul_mul_16s_16s_30_4_1_U14/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/a_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U14/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register sext_ln1319_6_reg_1006_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U14/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U13/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U14/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U14/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U14/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U14/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_tmp_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U14/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mul_mul_16s_16s_30_4_1_U14/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_cvt is absorbed into DSP mul_mul_16s_16s_30_4_1_U14/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: Generating DSP mul_mul_16s_16s_30_4_1_U2/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (A''*B'')'.
+DSP Report: register cos_hw_U/q3_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U2/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U2/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U2/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register cos_hw_U/q2_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U2/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U1/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/a_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U2/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U2/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U2/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U2/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_tmp_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U2/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mul_mul_16s_16s_30_4_1_U2/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_cvt is absorbed into DSP mul_mul_16s_16s_30_4_1_U2/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: Generating DSP mul_mul_16s_16s_30_4_1_U15/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (A''*B'')'.
+DSP Report: register mul_mul_16s_16s_30_4_1_U16/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U15/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U15/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U15/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U15/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_tmp_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U15/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U15/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_tmp_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U15/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U15/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U15/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mul_mul_16s_16s_30_4_1_U15/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_cvt is absorbed into DSP mul_mul_16s_16s_30_4_1_U15/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: Generating DSP am_submul_16s_16s_14ns_30_4_1_U20/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/p_reg_reg, operation Mode is: ((D-A)*(B:0x2d41)')'.
+DSP Report: register am_submul_16s_16s_14ns_30_4_1_U18/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/b_reg_reg is absorbed into DSP am_submul_16s_16s_14ns_30_4_1_U20/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register am_submul_16s_16s_14ns_30_4_1_U20/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/p_reg_reg is absorbed into DSP am_submul_16s_16s_14ns_30_4_1_U20/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register am_submul_16s_16s_14ns_30_4_1_U20/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/m_reg_reg is absorbed into DSP am_submul_16s_16s_14ns_30_4_1_U20/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register am_submul_16s_16s_14ns_30_4_1_U20/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/ad_reg_reg is absorbed into DSP am_submul_16s_16s_14ns_30_4_1_U20/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: operator am_submul_16s_16s_14ns_30_4_1_U20/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/m is absorbed into DSP am_submul_16s_16s_14ns_30_4_1_U20/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: operator am_submul_16s_16s_14ns_30_4_1_U20/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/ad is absorbed into DSP am_submul_16s_16s_14ns_30_4_1_U20/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: Generating DSP mul_mul_16s_16s_30_4_1_U8/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (A''*B'')'.
+DSP Report: register cos_hw_U/q1_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U8/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U6/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U8/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register sin_hw_U/q0_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U8/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U7/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/a_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U8/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U8/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U8/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U8/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_tmp_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U8/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mul_mul_16s_16s_30_4_1_U8/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_cvt is absorbed into DSP mul_mul_16s_16s_30_4_1_U8/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: Generating DSP mul_mul_16s_16s_30_4_1_U12/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (A2*B2)'.
+DSP Report: register mul_mul_16s_16s_30_4_1_U11/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U12/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U12/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/a_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U12/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U12/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U12/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U12/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_tmp_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U12/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mul_mul_16s_16s_30_4_1_U12/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_cvt is absorbed into DSP mul_mul_16s_16s_30_4_1_U12/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: Generating DSP mul_mul_16s_16s_30_4_1_U5/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (A''*B'')'.
+DSP Report: register sin_hw_U/q1_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U5/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U5/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U5/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register cos_hw_U/q0_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U5/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U5/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/a_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U5/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U5/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U5/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U5/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_tmp_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U5/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mul_mul_16s_16s_30_4_1_U5/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_cvt is absorbed into DSP mul_mul_16s_16s_30_4_1_U5/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: Generating DSP mul_mul_16s_16s_30_4_1_U9/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (A2*BCIN'')'.
+DSP Report: register sext_ln1319_2_reg_975_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U9/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U9/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U9/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U9/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/a_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U9/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U9/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U9/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U9/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_tmp_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U9/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mul_mul_16s_16s_30_4_1_U9/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_cvt is absorbed into DSP mul_mul_16s_16s_30_4_1_U9/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: Generating DSP am_addmul_16s_16s_14ns_30_4_1_U17/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/p_reg_reg, operation Mode is: ((D+A)*(B:0x2d41)')'.
+DSP Report: register am_submul_16s_16s_14ns_30_4_1_U18/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/b_reg_reg is absorbed into DSP am_addmul_16s_16s_14ns_30_4_1_U17/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register am_addmul_16s_16s_14ns_30_4_1_U17/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/p_reg_reg is absorbed into DSP am_addmul_16s_16s_14ns_30_4_1_U17/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register am_addmul_16s_16s_14ns_30_4_1_U17/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/m_reg_reg is absorbed into DSP am_addmul_16s_16s_14ns_30_4_1_U17/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register am_addmul_16s_16s_14ns_30_4_1_U17/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/ad_reg_reg is absorbed into DSP am_addmul_16s_16s_14ns_30_4_1_U17/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: operator am_addmul_16s_16s_14ns_30_4_1_U17/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/m is absorbed into DSP am_addmul_16s_16s_14ns_30_4_1_U17/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: operator am_addmul_16s_16s_14ns_30_4_1_U17/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/ad is absorbed into DSP am_addmul_16s_16s_14ns_30_4_1_U17/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: Generating DSP am_submul_16s_16s_14ns_30_4_1_U24/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/p_reg_reg, operation Mode is: ((D-A)*(B:0x2d41)')'.
+DSP Report: register am_submul_16s_16s_14ns_30_4_1_U18/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/b_reg_reg is absorbed into DSP am_submul_16s_16s_14ns_30_4_1_U24/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register am_submul_16s_16s_14ns_30_4_1_U24/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/p_reg_reg is absorbed into DSP am_submul_16s_16s_14ns_30_4_1_U24/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register am_submul_16s_16s_14ns_30_4_1_U24/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/m_reg_reg is absorbed into DSP am_submul_16s_16s_14ns_30_4_1_U24/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register am_submul_16s_16s_14ns_30_4_1_U24/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/ad_reg_reg is absorbed into DSP am_submul_16s_16s_14ns_30_4_1_U24/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: operator am_submul_16s_16s_14ns_30_4_1_U24/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/m is absorbed into DSP am_submul_16s_16s_14ns_30_4_1_U24/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: operator am_submul_16s_16s_14ns_30_4_1_U24/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/ad is absorbed into DSP am_submul_16s_16s_14ns_30_4_1_U24/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: Generating DSP mac_muladd_16s_16s_30s_30_4_1_U28/qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3_U/m_reg_reg, operation Mode is: (A''*B'')'.
+DSP Report: register output_state_V_6_reg_1077_reg is absorbed into DSP mac_muladd_16s_16s_30s_30_4_1_U28/qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3_U/m_reg_reg.
+DSP Report: register mac_muladd_16s_16s_30s_30_4_1_U28/qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3_U/b_reg_reg is absorbed into DSP mac_muladd_16s_16s_30s_30_4_1_U28/qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3_U/m_reg_reg.
+DSP Report: register output_state_V_6_reg_1077_reg is absorbed into DSP mac_muladd_16s_16s_30s_30_4_1_U28/qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3_U/m_reg_reg.
+DSP Report: register mac_muladd_16s_16s_30s_30_4_1_U28/qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3_U/b_reg_reg is absorbed into DSP mac_muladd_16s_16s_30s_30_4_1_U28/qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3_U/m_reg_reg.
+DSP Report: register mac_muladd_16s_16s_30s_30_4_1_U28/qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3_U/m_reg_reg is absorbed into DSP mac_muladd_16s_16s_30s_30_4_1_U28/qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3_U/m_reg_reg.
+DSP Report: operator mac_muladd_16s_16s_30s_30_4_1_U28/qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3_U/m is absorbed into DSP mac_muladd_16s_16s_30s_30_4_1_U28/qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3_U/m_reg_reg.
+DSP Report: Generating DSP mul_mul_16s_16s_30_4_1_U7/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (A''*B'')'.
+DSP Report: register sin_hw_U/q1_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U7/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U5/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U7/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register sin_hw_U/q0_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U7/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U7/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/a_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U7/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U7/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U7/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U7/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_tmp_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U7/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mul_mul_16s_16s_30_4_1_U7/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_cvt is absorbed into DSP mul_mul_16s_16s_30_4_1_U7/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: Generating DSP mul_mul_16s_16s_30_4_1_U10/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (A2*BCIN2)'.
+DSP Report: register mul_mul_16s_16s_30_4_1_U10/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/a_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U10/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U9/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U10/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U10/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U10/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U10/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_tmp_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U10/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mul_mul_16s_16s_30_4_1_U10/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_cvt is absorbed into DSP mul_mul_16s_16s_30_4_1_U10/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: Generating DSP mul_mul_16s_16s_30_4_1_U6/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (A''*B'')'.
+DSP Report: register cos_hw_U/q1_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U6/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U6/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U6/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register cos_hw_U/q0_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U6/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U5/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/a_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U6/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U6/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U6/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U6/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_tmp_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U6/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mul_mul_16s_16s_30_4_1_U6/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_cvt is absorbed into DSP mul_mul_16s_16s_30_4_1_U6/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: Generating DSP mul_mul_16s_16s_30_4_1_U11/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (A''*B'')'.
+DSP Report: register mul_mul_16s_16s_30_4_1_U11/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U11/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U11/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/a_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U11/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U11/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_tmp_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U11/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U11/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_tmp_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U11/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U11/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U11/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mul_mul_16s_16s_30_4_1_U11/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_cvt is absorbed into DSP mul_mul_16s_16s_30_4_1_U11/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: Generating DSP am_submul_16s_16s_14ns_30_4_1_U18/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/p_reg_reg, operation Mode is: ((D-A)*(B:0x2d41)')'.
+DSP Report: register am_submul_16s_16s_14ns_30_4_1_U18/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/b_reg_reg is absorbed into DSP am_submul_16s_16s_14ns_30_4_1_U18/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register am_submul_16s_16s_14ns_30_4_1_U18/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/p_reg_reg is absorbed into DSP am_submul_16s_16s_14ns_30_4_1_U18/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register am_submul_16s_16s_14ns_30_4_1_U18/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/m_reg_reg is absorbed into DSP am_submul_16s_16s_14ns_30_4_1_U18/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register am_submul_16s_16s_14ns_30_4_1_U18/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/ad_reg_reg is absorbed into DSP am_submul_16s_16s_14ns_30_4_1_U18/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: operator am_submul_16s_16s_14ns_30_4_1_U18/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/m is absorbed into DSP am_submul_16s_16s_14ns_30_4_1_U18/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: operator am_submul_16s_16s_14ns_30_4_1_U18/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/ad is absorbed into DSP am_submul_16s_16s_14ns_30_4_1_U18/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: Generating DSP mul_mul_16s_16s_30_4_1_U4/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (A''*B'')'.
+DSP Report: register cos_hw_U/q3_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U4/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U2/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U4/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register sin_hw_U/q2_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U4/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U3/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/a_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U4/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U4/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U4/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U4/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_tmp_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U4/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mul_mul_16s_16s_30_4_1_U4/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_cvt is absorbed into DSP mul_mul_16s_16s_30_4_1_U4/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: Generating DSP mul_mul_16s_16s_30_4_1_U16/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (A2*B2)'.
+DSP Report: register mul_mul_16s_16s_30_4_1_U16/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U16/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U16/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/a_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U16/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U16/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U16/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U16/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_tmp_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U16/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mul_mul_16s_16s_30_4_1_U16/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_cvt is absorbed into DSP mul_mul_16s_16s_30_4_1_U16/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: Generating DSP mul_mul_16s_16s_30_4_1_U1/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (A''*B'')'.
+DSP Report: register sin_hw_U/q3_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U1/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U1/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U1/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register cos_hw_U/q2_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U1/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U1/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/a_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U1/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U1/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U1/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U1/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_tmp_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U1/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mul_mul_16s_16s_30_4_1_U1/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_cvt is absorbed into DSP mul_mul_16s_16s_30_4_1_U1/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: Generating DSP mul_mul_16s_16s_30_4_1_U13/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (A2*B'')'.
+DSP Report: register mul_mul_16s_16s_30_4_1_U13/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/a_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U13/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register sext_ln1319_6_reg_1006_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U13/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U13/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U13/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U13/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U13/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U13/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_tmp_reg is absorbed into DSP mul_mul_16s_16s_30_4_1_U13/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mul_mul_16s_16s_30_4_1_U13/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_cvt is absorbed into DSP mul_mul_16s_16s_30_4_1_U13/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: Generating DSP am_addmul_16s_16s_14ns_30_4_1_U19/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/p_reg_reg, operation Mode is: ((D+A)*(B:0x2d41)')'.
+DSP Report: register am_submul_16s_16s_14ns_30_4_1_U18/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/b_reg_reg is absorbed into DSP am_addmul_16s_16s_14ns_30_4_1_U19/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register am_addmul_16s_16s_14ns_30_4_1_U19/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/p_reg_reg is absorbed into DSP am_addmul_16s_16s_14ns_30_4_1_U19/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register am_addmul_16s_16s_14ns_30_4_1_U19/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/m_reg_reg is absorbed into DSP am_addmul_16s_16s_14ns_30_4_1_U19/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register am_addmul_16s_16s_14ns_30_4_1_U19/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/ad_reg_reg is absorbed into DSP am_addmul_16s_16s_14ns_30_4_1_U19/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: operator am_addmul_16s_16s_14ns_30_4_1_U19/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/m is absorbed into DSP am_addmul_16s_16s_14ns_30_4_1_U19/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: operator am_addmul_16s_16s_14ns_30_4_1_U19/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/ad is absorbed into DSP am_addmul_16s_16s_14ns_30_4_1_U19/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: Generating DSP am_addmul_16s_16s_14ns_30_4_1_U23/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/p_reg_reg, operation Mode is: ((D+A)*(B:0x2d41)')'.
+DSP Report: register am_submul_16s_16s_14ns_30_4_1_U18/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/b_reg_reg is absorbed into DSP am_addmul_16s_16s_14ns_30_4_1_U23/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register am_addmul_16s_16s_14ns_30_4_1_U23/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/p_reg_reg is absorbed into DSP am_addmul_16s_16s_14ns_30_4_1_U23/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register am_addmul_16s_16s_14ns_30_4_1_U23/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/m_reg_reg is absorbed into DSP am_addmul_16s_16s_14ns_30_4_1_U23/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register am_addmul_16s_16s_14ns_30_4_1_U23/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/ad_reg_reg is absorbed into DSP am_addmul_16s_16s_14ns_30_4_1_U23/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: operator am_addmul_16s_16s_14ns_30_4_1_U23/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/m is absorbed into DSP am_addmul_16s_16s_14ns_30_4_1_U23/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: operator am_addmul_16s_16s_14ns_30_4_1_U23/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/ad is absorbed into DSP am_addmul_16s_16s_14ns_30_4_1_U23/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: Generating DSP mac_muladd_16s_16s_30s_30_4_1_U28/qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3_U/p_reg_reg, operation Mode is: (PCIN+(A''*B'')')'.
+DSP Report: register mul_mul_16s_16s_30_4_1_U26/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP mac_muladd_16s_16s_30s_30_4_1_U28/qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U26/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_tmp_reg is absorbed into DSP mac_muladd_16s_16s_30s_30_4_1_U28/qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U26/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP mac_muladd_16s_16s_30s_30_4_1_U28/qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U26/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_tmp_reg is absorbed into DSP mac_muladd_16s_16s_30s_30_4_1_U28/qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3_U/p_reg_reg.
+DSP Report: register mac_muladd_16s_16s_30s_30_4_1_U28/qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3_U/p_reg_reg is absorbed into DSP mac_muladd_16s_16s_30s_30_4_1_U28/qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U26/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_16s_16s_30s_30_4_1_U28/qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3_U/p_reg_reg.
+DSP Report: operator mac_muladd_16s_16s_30s_30_4_1_U28/qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3_U/p is absorbed into DSP mac_muladd_16s_16s_30s_30_4_1_U28/qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3_U/p_reg_reg.
+DSP Report: operator mul_mul_16s_16s_30_4_1_U26/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_cvt is absorbed into DSP mac_muladd_16s_16s_30s_30_4_1_U28/qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3_U/p_reg_reg.
+DSP Report: Generating DSP am_submul_16s_16s_14ns_30_4_1_U22/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/p_reg_reg, operation Mode is: ((D-A)*(B:0x2d41)')'.
+DSP Report: register am_submul_16s_16s_14ns_30_4_1_U18/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/b_reg_reg is absorbed into DSP am_submul_16s_16s_14ns_30_4_1_U22/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register am_submul_16s_16s_14ns_30_4_1_U22/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/p_reg_reg is absorbed into DSP am_submul_16s_16s_14ns_30_4_1_U22/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register am_submul_16s_16s_14ns_30_4_1_U22/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/m_reg_reg is absorbed into DSP am_submul_16s_16s_14ns_30_4_1_U22/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: register am_submul_16s_16s_14ns_30_4_1_U22/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/ad_reg_reg is absorbed into DSP am_submul_16s_16s_14ns_30_4_1_U22/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: operator am_submul_16s_16s_14ns_30_4_1_U22/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/m is absorbed into DSP am_submul_16s_16s_14ns_30_4_1_U22/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: operator am_submul_16s_16s_14ns_30_4_1_U22/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/ad is absorbed into DSP am_submul_16s_16s_14ns_30_4_1_U22/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/p_reg_reg.
+DSP Report: Generating DSP mac_muladd_16s_16s_30s_30_4_1_U27/qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3_U/m_reg_reg, operation Mode is: (A''*B'')'.
+DSP Report: register output_state_V_4_reg_1072_reg is absorbed into DSP mac_muladd_16s_16s_30s_30_4_1_U27/qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3_U/m_reg_reg.
+DSP Report: register mac_muladd_16s_16s_30s_30_4_1_U27/qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3_U/b_reg_reg is absorbed into DSP mac_muladd_16s_16s_30s_30_4_1_U27/qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3_U/m_reg_reg.
+DSP Report: register output_state_V_4_reg_1072_reg is absorbed into DSP mac_muladd_16s_16s_30s_30_4_1_U27/qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3_U/m_reg_reg.
+DSP Report: register mac_muladd_16s_16s_30s_30_4_1_U27/qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3_U/b_reg_reg is absorbed into DSP mac_muladd_16s_16s_30s_30_4_1_U27/qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3_U/m_reg_reg.
+DSP Report: register mac_muladd_16s_16s_30s_30_4_1_U27/qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3_U/m_reg_reg is absorbed into DSP mac_muladd_16s_16s_30s_30_4_1_U27/qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3_U/m_reg_reg.
+DSP Report: operator mac_muladd_16s_16s_30s_30_4_1_U27/qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3_U/m is absorbed into DSP mac_muladd_16s_16s_30s_30_4_1_U27/qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3_U/m_reg_reg.
+DSP Report: Generating DSP am_addmul_16s_16s_14ns_30_4_1_U21/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/p_reg_reg, operation Mode is: ((D+A)*(B:0x2d41)')'.
+DSP Report: register am_submul_16s_16s_14ns_30_4_1_U18/qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2_U/b_reg_reg is absorbed into DSP am_addmul_16s_16s_14ns_30_4_1_U21/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register am_addmul_16s_16s_14ns_30_4_1_U21/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/p_reg_reg is absorbed into DSP am_addmul_16s_16s_14ns_30_4_1_U21/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register am_addmul_16s_16s_14ns_30_4_1_U21/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/m_reg_reg is absorbed into DSP am_addmul_16s_16s_14ns_30_4_1_U21/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register am_addmul_16s_16s_14ns_30_4_1_U21/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/ad_reg_reg is absorbed into DSP am_addmul_16s_16s_14ns_30_4_1_U21/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: operator am_addmul_16s_16s_14ns_30_4_1_U21/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/m is absorbed into DSP am_addmul_16s_16s_14ns_30_4_1_U21/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: operator am_addmul_16s_16s_14ns_30_4_1_U21/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/ad is absorbed into DSP am_addmul_16s_16s_14ns_30_4_1_U21/qemulator_am_addmul_16s_16s_14ns_30_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: Generating DSP mac_muladd_16s_16s_30s_30_4_1_U27/qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3_U/p_reg_reg, operation Mode is: (PCIN+(A''*B'')')'.
+DSP Report: register mul_mul_16s_16s_30_4_1_U25/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP mac_muladd_16s_16s_30s_30_4_1_U27/qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U25/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_tmp_reg is absorbed into DSP mac_muladd_16s_16s_30s_30_4_1_U27/qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U25/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP mac_muladd_16s_16s_30s_30_4_1_U27/qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U25/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_tmp_reg is absorbed into DSP mac_muladd_16s_16s_30s_30_4_1_U27/qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3_U/p_reg_reg.
+DSP Report: register mac_muladd_16s_16s_30s_30_4_1_U27/qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3_U/p_reg_reg is absorbed into DSP mac_muladd_16s_16s_30s_30_4_1_U27/qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3_U/p_reg_reg.
+DSP Report: register mul_mul_16s_16s_30_4_1_U25/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_16s_16s_30s_30_4_1_U27/qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3_U/p_reg_reg.
+DSP Report: operator mac_muladd_16s_16s_30s_30_4_1_U27/qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3_U/p is absorbed into DSP mac_muladd_16s_16s_30s_30_4_1_U27/qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3_U/p_reg_reg.
+DSP Report: operator mul_mul_16s_16s_30_4_1_U25/qemulator_mul_mul_16s_16s_30_4_1_DSP48_0_U/p_cvt is absorbed into DSP mac_muladd_16s_16s_30s_30_4_1_U27/qemulator_mac_muladd_16s_16s_30s_30_4_1_DSP48_3_U/p_reg_reg.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:05:27 . Memory (MB): peak = 2154.430 ; gain = 610.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------------------------------------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                                     | DSP Mapping          | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------------------------------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|qemulator                                       | (A''*B'')'           | 16     | 16     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|qemulator_mul_mul_16s_16s_30_4_1_DSP48_0        | (A2*B'')'            | 16     | 16     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|qemulator                                       | (A''*B'')'           | 16     | 16     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|qemulator_mul_mul_16s_16s_30_4_1_DSP48_0        | (A''*B'')'           | 16     | 16     | -      | -      | 30     | 2    | 2    | -    | -    | -     | 1    | 0    | 
+|qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2 | ((D-A)*(B:0x2d41)')' | 25     | 18     | -      | 16     | 43     | 0    | 1    | -    | 0    | 1     | 1    | 1    | 
+|qemulator                                       | (A''*B'')'           | 16     | 16     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|qemulator_mul_mul_16s_16s_30_4_1_DSP48_0        | (A2*B2)'             | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|qemulator                                       | (A''*B'')'           | 16     | 16     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|qemulator                                       | (A2*BCIN'')'         | 16     | 16     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2 | ((D+A)*(B:0x2d41)')' | 16     | 18     | -      | 16     | 43     | 0    | 1    | -    | 0    | 1     | 1    | 1    | 
+|qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2 | ((D-A)*(B:0x2d41)')' | 25     | 18     | -      | 16     | 43     | 0    | 1    | -    | 0    | 1     | 1    | 1    | 
+|qemulator                                       | (A''*B'')'           | 16     | 16     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 0    | 
+|qemulator                                       | (A''*B'')'           | 16     | 16     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|qemulator_mul_mul_16s_16s_30_4_1_DSP48_0        | (A2*BCIN2)'          | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|qemulator                                       | (A''*B'')'           | 16     | 16     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|qemulator_mul_mul_16s_16s_30_4_1_DSP48_0        | (A''*B'')'           | 16     | 16     | -      | -      | 30     | 2    | 2    | -    | -    | -     | 1    | 0    | 
+|qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2 | ((D-A)*(B:0x2d41)')' | 25     | 18     | -      | 16     | 43     | 0    | 1    | -    | 0    | 1     | 1    | 1    | 
+|qemulator                                       | (A''*B'')'           | 16     | 16     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|qemulator_mul_mul_16s_16s_30_4_1_DSP48_0        | (A2*B2)'             | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|qemulator                                       | (A''*B'')'           | 16     | 16     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|qemulator_mul_mul_16s_16s_30_4_1_DSP48_0        | (A2*B'')'            | 16     | 16     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2 | ((D+A)*(B:0x2d41)')' | 16     | 18     | -      | 16     | 43     | 0    | 1    | -    | 0    | 1     | 1    | 1    | 
+|qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2 | ((D+A)*(B:0x2d41)')' | 16     | 18     | -      | 16     | 43     | 0    | 1    | -    | 0    | 1     | 1    | 1    | 
+|qemulator_mul_mul_16s_16s_30_4_1_DSP48_0        | (PCIN+(A''*B'')')'   | 16     | 16     | -      | -      | 30     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2 | ((D-A)*(B:0x2d41)')' | 25     | 18     | -      | 16     | 43     | 0    | 1    | -    | 0    | 1     | 1    | 1    | 
+|qemulator                                       | (A''*B'')'           | 16     | 16     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 0    | 
+|qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2 | ((D+A)*(B:0x2d41)')' | 16     | 18     | -      | 16     | 43     | 0    | 1    | -    | 0    | 1     | 1    | 1    | 
+|qemulator_mul_mul_16s_16s_30_4_1_DSP48_0        | (PCIN+(A''*B'')')'   | 16     | 16     | -      | -      | 30     | 2    | 2    | -    | -    | -     | 1    | 1    | 
++------------------------------------------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:05:38 . Memory (MB): peak = 2154.430 ; gain = 610.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:05:38 . Memory (MB): peak = 2154.430 ; gain = 610.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:05:38 . Memory (MB): peak = 2154.430 ; gain = 610.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:05:43 . Memory (MB): peak = 2154.430 ; gain = 610.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:05:43 . Memory (MB): peak = 2154.430 ; gain = 610.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:05:43 . Memory (MB): peak = 2154.430 ; gain = 610.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:05:43 . Memory (MB): peak = 2154.430 ; gain = 610.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:05:43 . Memory (MB): peak = 2154.430 ; gain = 610.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:05:43 . Memory (MB): peak = 2154.430 ; gain = 610.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------------------------------------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                                     | DSP Mapping        | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------------------------------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2 | (((D+A)'*B)')'     | 30     | 14     | -      | 25     | 30     | 0    | 0    | -    | 0    | 1     | 1    | 1    | 
+|qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2 | (((D+A)'*B)')'     | 30     | 14     | -      | 25     | 30     | 0    | 0    | -    | 0    | 1     | 1    | 1    | 
+|qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2 | (((D+A)'*B)')'     | 30     | 14     | -      | 25     | 30     | 0    | 0    | -    | 0    | 1     | 1    | 1    | 
+|qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2 | (((D+A)'*B)')'     | 30     | 14     | -      | 25     | 30     | 0    | 0    | -    | 0    | 1     | 1    | 1    | 
+|qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2 | (((D-A)'*B)')'     | 30     | 14     | -      | 25     | 30     | 0    | 0    | -    | 0    | 1     | 1    | 1    | 
+|qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2 | (((D-A)'*B)')'     | 30     | 14     | -      | 25     | 30     | 0    | 0    | -    | 0    | 1     | 1    | 1    | 
+|qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2 | (((D-A)'*B)')'     | 30     | 14     | -      | 25     | 30     | 0    | 0    | -    | 0    | 1     | 1    | 1    | 
+|qemulator_am_submul_16s_16s_14ns_30_4_1_DSP48_2 | (((D-A)'*B)')'     | 30     | 14     | -      | 25     | 30     | 0    | 0    | -    | 0    | 1     | 1    | 1    | 
+|qemulator                                       | (A''*B'')'         | 30     | 18     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|qemulator_mul_mul_16s_16s_30_4_1_DSP48_0        | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 30     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|qemulator                                       | (A''*B'')'         | 30     | 18     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|qemulator_mul_mul_16s_16s_30_4_1_DSP48_0        | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 30     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|qemulator                                       | ((A''*B'')')'      | 30     | 18     | -      | -      | 30     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|qemulator_mul_mul_16s_16s_30_4_1_DSP48_0        | ((A'*B')')'        | 30     | 0      | -      | -      | 30     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|qemulator_mul_mul_16s_16s_30_4_1_DSP48_0        | (A''*B'')'         | 30     | 18     | -      | -      | 30     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|qemulator_mul_mul_16s_16s_30_4_1_DSP48_0        | ((A'*B')')'        | 30     | 18     | -      | -      | 30     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|qemulator_mul_mul_16s_16s_30_4_1_DSP48_0        | ((A'*B'')')'       | 30     | 18     | -      | -      | 30     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|qemulator_mul_mul_16s_16s_30_4_1_DSP48_0        | ((A'*B'')')'       | 30     | 18     | -      | -      | 30     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|qemulator_mul_mul_16s_16s_30_4_1_DSP48_0        | (A''*B'')'         | 30     | 18     | -      | -      | 30     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|qemulator_mul_mul_16s_16s_30_4_1_DSP48_0        | ((A'*B')')'        | 30     | 18     | -      | -      | 30     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|qemulator                                       | ((A''*B'')')'      | 30     | 18     | -      | -      | 30     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|qemulator                                       | ((A''*B'')')'      | 30     | 18     | -      | -      | 30     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|qemulator                                       | ((A''*B'')')'      | 30     | 18     | -      | -      | 30     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|qemulator                                       | ((A''*B'')')'      | 30     | 18     | -      | -      | 30     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|qemulator                                       | ((A''*B'')')'      | 30     | 18     | -      | -      | 30     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|qemulator                                       | ((A''*B'')')'      | 30     | 18     | -      | -      | 30     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|qemulator                                       | ((A''*B'')')'      | 30     | 18     | -      | -      | 30     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|qemulator                                       | ((A'*B'')')'       | 30     | 0      | -      | -      | 30     | 1    | 2    | -    | -    | -     | 1    | 1    | 
++------------------------------------------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |    18|
+|2     |DSP48E1 |    28|
+|10    |LUT1    |    32|
+|11    |LUT2    |    32|
+|12    |LUT3    |    10|
+|13    |LUT4    |     4|
+|14    |LUT5    |     7|
+|15    |LUT6    |    56|
+|16    |FDRE    |    83|
+|17    |FDSE    |     1|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:05:43 . Memory (MB): peak = 2154.430 ; gain = 610.387
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 17 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:05:00 . Memory (MB): peak = 2154.430 ; gain = 497.637
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:05:43 . Memory (MB): peak = 2154.430 ; gain = 610.387
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2154.430 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 46 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2154.430 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: d41aab21
+INFO: [Common 17-83] Releasing license: Synthesis
+79 Infos, 26 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:06:05 . Memory (MB): peak = 2154.430 ; gain = 673.613
+INFO: [Common 17-1381] The checkpoint 'C:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.runs/design_1_qemulator_0_3_synth_1/design_1_qemulator_0_3.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_qemulator_0_3, cache-ID = 436b52af60e78f96
+INFO: [Coretcl 2-1174] Renamed 55 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator/Q_emulator/Q_emulator.runs/design_1_qemulator_0_3_synth_1/design_1_qemulator_0_3.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_qemulator_0_3_utilization_synth.rpt -pb design_1_qemulator_0_3_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 20 13:00:05 2023...

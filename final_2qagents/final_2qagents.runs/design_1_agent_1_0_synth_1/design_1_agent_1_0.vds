@@ -1,0 +1,617 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Oct 31 17:32:27 2023
+# Process ID: 8756
+# Current directory: C:/Users/mlabadmin/Desktop/QMARL_FPGA/final_2qagents/final_2qagents.runs/design_1_agent_1_0_synth_1
+# Command line: vivado.exe -log design_1_agent_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_agent_1_0.tcl
+# Log file: C:/Users/mlabadmin/Desktop/QMARL_FPGA/final_2qagents/final_2qagents.runs/design_1_agent_1_0_synth_1/design_1_agent_1_0.vds
+# Journal file: C:/Users/mlabadmin/Desktop/QMARL_FPGA/final_2qagents/final_2qagents.runs/design_1_agent_1_0_synth_1\vivado.jou
+# Running On: hp6g4-step-1, OS: Windows, CPU Frequency: 3192 MHz, CPU Physical cores: 6, Host memory: 16948 MB
+#-----------------------------------------------------------
+source design_1_agent_1_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1532.188 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/mlabadmin/Desktop/QMARL_FPGA/Qemulator'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/mlabadmin/Downloads/core-comblock'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2022.1/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1532.188 ; gain = 0.000
+Command: synth_design -top design_1_agent_1_0 -part xc7z020clg484-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 8028
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:04:12 . Memory (MB): peak = 1936.777 ; gain = 386.910
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_agent_1_0' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/final_2qagents/final_2qagents.gen/sources_1/bd/design_1/ip/design_1_agent_1_0/synth/design_1_agent_1_0.vhd:68]
+	Parameter alf bound to: 11 - type: integer 
+	Parameter bin bound to: 64 - type: integer 
+	Parameter div bound to: 1 - type: integer 
+	Parameter res bound to: 23 - type: integer 
+	Parameter sed bound to: 725460067 - type: integer 
+INFO: [Synth 8-3491] module 'agent' declared at 'C:/Users/mlabadmin/Desktop/QMARL_FPGA/final_2qagents/final_2qagents.srcs/sources_1/imports/new/agent.vhd:6' bound to instance 'U0' of component 'agent' [c:/Users/mlabadmin/Desktop/QMARL_FPGA/final_2qagents/final_2qagents.gen/sources_1/bd/design_1/ip/design_1_agent_1_0/synth/design_1_agent_1_0.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'agent' [C:/Users/mlabadmin/Desktop/QMARL_FPGA/final_2qagents/final_2qagents.srcs/sources_1/imports/new/agent.vhd:22]
+WARNING: [Synth 8-614] signal 'cumsum' is read in the process but is not in the sensitivity list [C:/Users/mlabadmin/Desktop/QMARL_FPGA/final_2qagents/final_2qagents.srcs/sources_1/imports/new/agent.vhd:157]
+WARNING: [Synth 8-614] signal 'rand_sample' is read in the process but is not in the sensitivity list [C:/Users/mlabadmin/Desktop/QMARL_FPGA/final_2qagents/final_2qagents.srcs/sources_1/imports/new/agent.vhd:157]
+INFO: [Synth 8-256] done synthesizing module 'agent' (0#1) [C:/Users/mlabadmin/Desktop/QMARL_FPGA/final_2qagents/final_2qagents.srcs/sources_1/imports/new/agent.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'design_1_agent_1_0' (0#1) [c:/Users/mlabadmin/Desktop/QMARL_FPGA/final_2qagents/final_2qagents.gen/sources_1/bd/design_1/ip/design_1_agent_1_0/synth/design_1_agent_1_0.vhd:68]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:04:22 . Memory (MB): peak = 2213.359 ; gain = 663.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:04:23 . Memory (MB): peak = 2231.223 ; gain = 681.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:04:23 . Memory (MB): peak = 2231.223 ; gain = 681.355
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.281 . Memory (MB): peak = 2231.223 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2362.152 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.386 . Memory (MB): peak = 2362.156 ; gain = 0.004
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:04:42 . Memory (MB): peak = 2362.156 ; gain = 812.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:04:42 . Memory (MB): peak = 2362.156 ; gain = 812.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:04:42 . Memory (MB): peak = 2362.156 ; gain = 812.289
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'agent'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               st0_reset |                              000 |                              000
+                st1_idle |                              001 |                              001
+               st2_valid |                              010 |                              010
+                 st3_pdf |                              011 |                              011
+              st4_cumsum |                              100 |                              100
+                st5_done |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'agent'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:34 ; elapsed = 00:04:51 . Memory (MB): peak = 2362.156 ; gain = 812.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   34 Bit       Adders := 1     
+	   2 Input   25 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               43 Bit    Registers := 64    
+	               34 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	               18 Bit    Registers := 65    
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input   43 Bit        Muxes := 192   
+	   2 Input   32 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 3     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 268   
+	   3 Input    1 Bit        Muxes := 3     
+	   4 Input    1 Bit        Muxes := 67    
+	   6 Input    1 Bit        Muxes := 1     
+	   5 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: C'+A*B2.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: register arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:07:12 . Memory (MB): peak = 2362.156 ; gain = 812.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B2        | 25     | 18     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | C'+A*B2     | 24     | 18     | 32     | -      | 43     | 0    | 1    | 1    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:59 ; elapsed = 00:07:20 . Memory (MB): peak = 2362.156 ; gain = 812.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:07:21 . Memory (MB): peak = 2362.156 ; gain = 812.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:02 ; elapsed = 00:07:23 . Memory (MB): peak = 2362.156 ; gain = 812.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:06 ; elapsed = 00:07:28 . Memory (MB): peak = 2362.156 ; gain = 812.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:06 ; elapsed = 00:07:28 . Memory (MB): peak = 2362.156 ; gain = 812.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:07 ; elapsed = 00:07:28 . Memory (MB): peak = 2362.156 ; gain = 812.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:07 ; elapsed = 00:07:28 . Memory (MB): peak = 2362.156 ; gain = 812.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:07 ; elapsed = 00:07:28 . Memory (MB): peak = 2362.156 ; gain = 812.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:07 ; elapsed = 00:07:28 . Memory (MB): peak = 2362.156 ; gain = 812.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | A*B'        | 30     | 17     | -      | -      | 43     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|agent       | C'+A*B'     | 30     | 17     | 48     | -      | 43     | 0    | 1    | 1    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |    17|
+|2     |DSP48E1 |    65|
+|3     |LUT1    |    16|
+|4     |LUT2    |    10|
+|5     |LUT3    |  2236|
+|6     |LUT4    |    40|
+|7     |LUT5    |     5|
+|8     |LUT6    |  1119|
+|9     |MUXF7   |   316|
+|10    |MUXF8   |    94|
+|11    |FDRE    |  2223|
+|12    |FDSE    |    80|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:07 ; elapsed = 00:07:28 . Memory (MB): peak = 2362.156 ; gain = 812.289
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:48 ; elapsed = 00:07:17 . Memory (MB): peak = 2362.156 ; gain = 681.355
+Synthesis Optimization Complete : Time (s): cpu = 00:01:07 ; elapsed = 00:07:29 . Memory (MB): peak = 2362.156 ; gain = 812.289
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 2362.156 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 492 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'design_1_agent_1_0' is not ideal for floorplanning, since the cellview 'agent' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2362.156 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: ec611a47
+INFO: [Common 17-83] Releasing license: Synthesis
+26 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:14 ; elapsed = 00:07:45 . Memory (MB): peak = 2362.156 ; gain = 829.969
+INFO: [Common 17-1381] The checkpoint 'C:/Users/mlabadmin/Desktop/QMARL_FPGA/final_2qagents/final_2qagents.runs/design_1_agent_1_0_synth_1/design_1_agent_1_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_agent_1_0, cache-ID = b0d01981d0b09ffb
+INFO: [Common 17-1381] The checkpoint 'C:/Users/mlabadmin/Desktop/QMARL_FPGA/final_2qagents/final_2qagents.runs/design_1_agent_1_0_synth_1/design_1_agent_1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_agent_1_0_utilization_synth.rpt -pb design_1_agent_1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 31 17:42:55 2023...

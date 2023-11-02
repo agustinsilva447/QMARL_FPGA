@@ -1,0 +1,165 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'qemulator'" level="0">
+<item name = "Date">Fri Oct 20 12:01:18 2023
+</item>
+<item name = "Version">2022.1 (Build 3526262 on Mon Apr 18 15:48:16 MDT 2022)</item>
+<item name = "Project">Qemulator</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 4.593 ns, 1.25 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">17, 17, 0.170 us, 0.170 us, 18, 18, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, 28, -, -, -</column>
+<column name="Expression">-, -, 0, 122, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, -, -, -</column>
+<column name="Memory">0, -, 128, 8, -</column>
+<column name="Multiplexer">-, -, -, 165, -</column>
+<column name="Register">-, -, 162, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 12, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+<column name="am_addmul_16s_16s_14ns_30_4_1_U17">am_addmul_16s_16s_14ns_30_4_1, (i0 + i1) * i2</column>
+<column name="am_addmul_16s_16s_14ns_30_4_1_U19">am_addmul_16s_16s_14ns_30_4_1, (i0 + i1) * i2</column>
+<column name="am_addmul_16s_16s_14ns_30_4_1_U21">am_addmul_16s_16s_14ns_30_4_1, (i0 + i1) * i2</column>
+<column name="am_addmul_16s_16s_14ns_30_4_1_U23">am_addmul_16s_16s_14ns_30_4_1, (i0 + i1) * i2</column>
+<column name="am_submul_16s_16s_14ns_30_4_1_U18">am_submul_16s_16s_14ns_30_4_1, (i0 - i1) * i2</column>
+<column name="am_submul_16s_16s_14ns_30_4_1_U20">am_submul_16s_16s_14ns_30_4_1, (i0 - i1) * i2</column>
+<column name="am_submul_16s_16s_14ns_30_4_1_U22">am_submul_16s_16s_14ns_30_4_1, (i0 - i1) * i2</column>
+<column name="am_submul_16s_16s_14ns_30_4_1_U24">am_submul_16s_16s_14ns_30_4_1, (i0 - i1) * i2</column>
+<column name="mac_muladd_16s_16s_30s_30_4_1_U27">mac_muladd_16s_16s_30s_30_4_1, i0 + i1 * i1</column>
+<column name="mac_muladd_16s_16s_30s_30_4_1_U28">mac_muladd_16s_16s_30s_30_4_1, i0 + i1 * i1</column>
+<column name="mul_mul_16s_16s_30_4_1_U1">mul_mul_16s_16s_30_4_1, i0 * i1</column>
+<column name="mul_mul_16s_16s_30_4_1_U2">mul_mul_16s_16s_30_4_1, i0 * i1</column>
+<column name="mul_mul_16s_16s_30_4_1_U3">mul_mul_16s_16s_30_4_1, i0 * i1</column>
+<column name="mul_mul_16s_16s_30_4_1_U4">mul_mul_16s_16s_30_4_1, i0 * i1</column>
+<column name="mul_mul_16s_16s_30_4_1_U5">mul_mul_16s_16s_30_4_1, i0 * i1</column>
+<column name="mul_mul_16s_16s_30_4_1_U6">mul_mul_16s_16s_30_4_1, i0 * i1</column>
+<column name="mul_mul_16s_16s_30_4_1_U7">mul_mul_16s_16s_30_4_1, i0 * i1</column>
+<column name="mul_mul_16s_16s_30_4_1_U8">mul_mul_16s_16s_30_4_1, i0 * i1</column>
+<column name="mul_mul_16s_16s_30_4_1_U9">mul_mul_16s_16s_30_4_1, i0 * i1</column>
+<column name="mul_mul_16s_16s_30_4_1_U10">mul_mul_16s_16s_30_4_1, i0 * i1</column>
+<column name="mul_mul_16s_16s_30_4_1_U11">mul_mul_16s_16s_30_4_1, i0 * i1</column>
+<column name="mul_mul_16s_16s_30_4_1_U12">mul_mul_16s_16s_30_4_1, i0 * i1</column>
+<column name="mul_mul_16s_16s_30_4_1_U13">mul_mul_16s_16s_30_4_1, i0 * i1</column>
+<column name="mul_mul_16s_16s_30_4_1_U14">mul_mul_16s_16s_30_4_1, i0 * i1</column>
+<column name="mul_mul_16s_16s_30_4_1_U15">mul_mul_16s_16s_30_4_1, i0 * i1</column>
+<column name="mul_mul_16s_16s_30_4_1_U16">mul_mul_16s_16s_30_4_1, i0 * i1</column>
+<column name="mul_mul_16s_16s_30_4_1_U25">mul_mul_16s_16s_30_4_1, i0 * i0</column>
+<column name="mul_mul_16s_16s_30_4_1_U26">mul_mul_16s_16s_30_4_1, i0 * i0</column>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="cos_hw_U">cos_hw_ROM_AUTO_1R, 0, 64, 4, 0, 16, 16, 1, 256</column>
+<column name="sin_hw_U">sin_hw_ROM_AUTO_1R, 0, 64, 4, 0, 16, 16, 1, 256</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="r_V_14_fu_645_p2">+, 0, 0, 37, 30, 30</column>
+<column name="r_V_15_fu_691_p2">+, 0, 0, 37, 30, 30</column>
+<column name="u1_V_6_fu_288_p2">-, 0, 0, 23, 1, 16</column>
+<column name="u2_V_1_fu_329_p2">-, 0, 0, 23, 1, 16</column>
+<column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="action1_ap_vld_in_sig">9, 2, 1, 2</column>
+<column name="action1_ap_vld_preg">9, 2, 1, 2</column>
+<column name="action1_blk_n">9, 2, 1, 2</column>
+<column name="action1_in_sig">9, 2, 9, 18</column>
+<column name="action2_ap_vld_in_sig">9, 2, 1, 2</column>
+<column name="action2_ap_vld_preg">9, 2, 1, 2</column>
+<column name="action2_blk_n">9, 2, 1, 2</column>
+<column name="action2_in_sig">9, 2, 9, 18</column>
+<column name="ap_NS_fsm">93, 19, 1, 19</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="action1_ap_vld_preg">1, 0, 1, 0</column>
+<column name="action1_preg">9, 0, 9, 0</column>
+<column name="action2_ap_vld_preg">1, 0, 1, 0</column>
+<column name="action2_preg">9, 0, 9, 0</column>
+<column name="ap_CS_fsm">18, 0, 18, 0</column>
+<column name="output_state_V_4_reg_1072">16, 0, 16, 0</column>
+<column name="output_state_V_6_reg_1077">16, 0, 16, 0</column>
+<column name="sext_ln1319_2_reg_975">30, 0, 30, 0</column>
+<column name="sext_ln1319_6_reg_1006">30, 0, 30, 0</column>
+<column name="sin_hw_load_2_reg_989">16, 0, 16, 0</column>
+<column name="sin_hw_load_reg_958">16, 0, 16, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_none, qemulator, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_none, qemulator, return value</column>
+<column name="action1">in, 9, ap_vld, action1, scalar</column>
+<column name="action1_ap_vld">in, 1, ap_vld, action1, scalar</column>
+<column name="action2">in, 9, ap_vld, action2, scalar</column>
+<column name="action2_ap_vld">in, 1, ap_vld, action2, scalar</column>
+<column name="reward1">out, 16, ap_vld, reward1, pointer</column>
+<column name="reward1_ap_vld">out, 1, ap_vld, reward1, pointer</column>
+<column name="reward2">out, 16, ap_vld, reward2, pointer</column>
+<column name="reward2_ap_vld">out, 1, ap_vld, reward2, pointer</column>
+</table>
+</item>
+</section>
+</profile>

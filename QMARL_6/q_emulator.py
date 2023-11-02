@@ -50,7 +50,7 @@ def Numpy_QGT_Nplayers3(tipo, J_init, J_dg):
     prob = np.power(np.abs(outputstate),2)
     return prob
 
-def Numpy_QGT_Nplayers4(tipo, J_init, J_dg):
+def Numpy_QGT_Nplayers4(tipo):
     n_p = len(tipo) # Number of qubits
 
     # Generate main operator with Kronecker products
@@ -64,24 +64,24 @@ def Numpy_QGT_Nplayers4(tipo, J_init, J_dg):
               temp2[2*j,   -1] = temp1[j,-1] * players_gate[0,1]
               temp2[2*j+1, -1] = temp1[j,-1] * players_gate[1,1]
         temp1 = temp2
-
     # Multiply main operator by initial quantum state
     state_aux = np.zeros((2**n_p, 1), dtype=np.cfloat)
     for i in range(2**n_p):
-        state_aux[i] = J_init[0] * temp1[i, 0] + J_init[-1] * temp1[i, 1]
-
+        state_aux[i] = (np.sqrt(2)/2) * (temp1[i, 0] -1j*temp1[i, 1])
     # Calculate final quantum state
     outputstate = np.zeros((2**n_p, 1), dtype=np.cfloat)
     for i in range(2**n_p):
-      outputstate[i] = J_dg[i, i] * state_aux[i] + J_dg[i, 2**n_p - 1 - i] * state_aux[2**n_p - 1 - i]
-
+        outputstate[i] = (np.sqrt(2)/2) * (state_aux[i] -1j*state_aux[2**n_p - 1 - i])
     # Calculate final probabilities
     prob = np.power(np.abs(outputstate), 2)
     return prob
 
 def matrix_reward(rotat, J_init, J_dg, game):  
-  prob = Numpy_QGT_Nplayers2(rotat, J_init, J_dg)
-  reward_g = prob.transpose() * game
+  prob = Numpy_QGT_Nplayers4(rotat, J_init, J_dg)
+  print(prob)
+  print(prob.transpose().shape)
+  print(game.shape)
+  reward_g = np.dot(prob.transpose(), game)
   reward_h = reward_g.tolist()[0]
   return reward_h
 
@@ -91,7 +91,7 @@ def platonia_matrix(n):
     mm[2**i][n-i-1] = 10
   return  mm
 
-players = 5
+players = 2
 game    = platonia_matrix(players)
 gamma   = np.pi/2
 
@@ -102,18 +102,29 @@ J = np.matrix(np.cos(gamma/2) * I_f + 1j * np.sin(gamma/2) * X_f)
 J_init = J * init_mat
 J_dg = J.H
 
-rotat = np.random.uniform(0, 2*np.pi, [players, 3])
-#print(Numpy_QGT_Nplayers1(rotat, J_init, J_dg))
-#print(Numpy_QGT_Nplayers2(rotat, J_init, J_dg))
-#print(Numpy_QGT_Nplayers3(rotat, J_init, J_dg))
-#print(Numpy_QGT_Nplayers4(rotat, J_init, J_dg))
+N_SIZE = 3
+A_MAX  = 2 * np.pi
+angulos = np.arange(0, A_MAX, A_MAX / np.power(2, N_SIZE))
+all_actions = [(rx,ry,0) for rx in angulos for ry in angulos]
 
-start = time.time()
-a = Numpy_QGT_Nplayers1(rotat, J_init, J_dg)
-ta = time.time() - start
+"""rotat = []
+rotat.append(all_actions[61])
+rotat.append(all_actions[14])
+matrix_reward(rotat, J_init, J_dg, game)"""
 
-start = time.time()
-b = Numpy_QGT_Nplayers4(rotat, J_init, J_dg)
-tb = time.time() - start
+cum_error = 0
+for i in range(1000):
+    rotat = np.random.uniform(0, 2*np.pi, [players, 3])
 
-print(ta, tb, np.sum(np.abs(a) - np.abs(b)))
+    start = time.time()
+    a = Numpy_QGT_Nplayers1(rotat, J_init, J_dg)
+    ta = time.time() - start
+
+    start = time.time()
+    b = Numpy_QGT_Nplayers4(rotat)
+    tb = time.time() - start
+
+    cum_error += np.sum(np.abs(a) - np.abs(b))
+    #print(ta, tb, np.sum(np.abs(a) - np.abs(b)))
+
+print(cum_error)

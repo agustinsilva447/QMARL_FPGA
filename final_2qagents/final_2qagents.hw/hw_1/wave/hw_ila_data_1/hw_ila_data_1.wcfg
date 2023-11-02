@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/mlabadmin/Desktop/QMARL_FPGA/final_2qagents/final_2qagents.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0"></ZoomStartTime>
+      <ZoomEndTime time="1,025"></ZoomEndTime>
+      <Cursor1Time time="0"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="259"></NameColumnWidth>
+      <ValueColumnWidth column_width="110"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="5" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject fp_name="group27" type="group">
+      <obj_property name="label">Comblock</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="design_1_i/system_ila_0/U0/probe9_1" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">design_1_i/system_ila_0/U0/probe9_1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">probe9_1[31:0]</obj_property>
+         <obj_property name="label">comblock_0_reg0_o</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="design_1_i/system_ila_0/U0/probe22_1" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">design_1_i/system_ila_0/U0/probe22_1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">probe22_1[31:0]</obj_property>
+         <obj_property name="label">comblock_0_reg1_o</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group25" type="group">
+      <obj_property name="label">Q2A</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="design_1_i/system_ila_0/U0/probe14_1" type="logic">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">design_1_i/system_ila_0/U0/probe14_1</obj_property>
+         <obj_property name="ObjectShortName">probe14_1</obj_property>
+         <obj_property name="label">Q2A_0_o_val1</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="design_1_i/system_ila_0/U0/probe12_1" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">design_1_i/system_ila_0/U0/probe12_1[15:0]</obj_property>
+         <obj_property name="ObjectShortName">probe12_1[15:0]</obj_property>
+         <obj_property name="label">Q2A_0_o_rew1</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="design_1_i/system_ila_0/U0/probe10_1" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">design_1_i/system_ila_0/U0/probe10_1[15:0]</obj_property>
+         <obj_property name="ObjectShortName">probe10_1[15:0]</obj_property>
+         <obj_property name="label">Q2A_0_avg_r1</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="design_1_i/system_ila_0/U0/probe15_1" type="logic">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">design_1_i/system_ila_0/U0/probe15_1</obj_property>
+         <obj_property name="ObjectShortName">probe15_1</obj_property>
+         <obj_property name="label">Q2A_0_o_val2</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="design_1_i/system_ila_0/U0/probe13_1" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">design_1_i/system_ila_0/U0/probe13_1[15:0]</obj_property>
+         <obj_property name="ObjectShortName">probe13_1[15:0]</obj_property>
+         <obj_property name="label">Q2A_0_o_rew2</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="design_1_i/system_ila_0/U0/probe11_1" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">design_1_i/system_ila_0/U0/probe11_1[15:0]</obj_property>
+         <obj_property name="ObjectShortName">probe11_1[15:0]</obj_property>
+         <obj_property name="label">Q2A_0_avg_r2</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group52" type="group">
+      <obj_property name="label">Agents</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="design_1_i/system_ila_0/U0/probe5_1" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">design_1_i/system_ila_0/U0/probe5_1[8:0]</obj_property>
+         <obj_property name="ObjectShortName">probe5_1[8:0]</obj_property>
+         <obj_property name="label">agent_0_action</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="design_1_i/system_ila_0/U0/probe6_1" type="logic">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">design_1_i/system_ila_0/U0/probe6_1</obj_property>
+         <obj_property name="ObjectShortName">probe6_1</obj_property>
+         <obj_property name="label">agent_0_done</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="design_1_i/system_ila_0/U0/probe20_1" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">design_1_i/system_ila_0/U0/probe20_1[2:0]</obj_property>
+         <obj_property name="ObjectShortName">probe20_1[2:0]</obj_property>
+         <obj_property name="label">o_state</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="design_1_i/system_ila_0/U0/probe7_1" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">design_1_i/system_ila_0/U0/probe7_1[8:0]</obj_property>
+         <obj_property name="ObjectShortName">probe7_1[8:0]</obj_property>
+         <obj_property name="label">agent_1_action</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="design_1_i/system_ila_0/U0/probe8_1" type="logic">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">design_1_i/system_ila_0/U0/probe8_1</obj_property>
+         <obj_property name="ObjectShortName">probe8_1</obj_property>
+         <obj_property name="label">agent_1_done</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="design_1_i/system_ila_0/U0/probe21_1" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">design_1_i/system_ila_0/U0/probe21_1[2:0]</obj_property>
+         <obj_property name="ObjectShortName">probe21_1[2:0]</obj_property>
+         <obj_property name="label">o_state_1</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group24" type="group">
+      <obj_property name="label">A2Q</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="design_1_i/system_ila_0/U0/probe3_1" type="logic">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">design_1_i/system_ila_0/U0/probe3_1</obj_property>
+         <obj_property name="ObjectShortName">probe3_1</obj_property>
+         <obj_property name="label">A2Q_0_o_val1</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="design_1_i/system_ila_0/U0/probe1_1" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">design_1_i/system_ila_0/U0/probe1_1[8:0]</obj_property>
+         <obj_property name="ObjectShortName">probe1_1[8:0]</obj_property>
+         <obj_property name="label">A2Q_0_o_act1</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="design_1_i/system_ila_0/U0/probe4_1" type="logic">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">design_1_i/system_ila_0/U0/probe4_1</obj_property>
+         <obj_property name="ObjectShortName">probe4_1</obj_property>
+         <obj_property name="label">A2Q_0_o_val2</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="design_1_i/system_ila_0/U0/probe2_1" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">design_1_i/system_ila_0/U0/probe2_1[8:0]</obj_property>
+         <obj_property name="ObjectShortName">probe2_1[8:0]</obj_property>
+         <obj_property name="label">A2Q_0_o_act2</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="design_1_i/system_ila_0/U0/probe0_1" type="logic">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">design_1_i/system_ila_0/U0/probe0_1</obj_property>
+         <obj_property name="ObjectShortName">probe0_1</obj_property>
+         <obj_property name="label">A2Q_0_done</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group26" type="group">
+      <obj_property name="label">Qemulator</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="design_1_i/system_ila_0/U0/probe17_1" type="logic">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">design_1_i/system_ila_0/U0/probe17_1</obj_property>
+         <obj_property name="ObjectShortName">probe17_1</obj_property>
+         <obj_property name="label">qemulator_0_reward1_ap_vld</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="design_1_i/system_ila_0/U0/probe16_1" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">design_1_i/system_ila_0/U0/probe16_1[15:0]</obj_property>
+         <obj_property name="ObjectShortName">probe16_1[15:0]</obj_property>
+         <obj_property name="label">qemulator_0_reward1</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="design_1_i/system_ila_0/U0/probe19_1" type="logic">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">design_1_i/system_ila_0/U0/probe19_1</obj_property>
+         <obj_property name="ObjectShortName">probe19_1</obj_property>
+         <obj_property name="label">qemulator_0_reward2_ap_vld</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="design_1_i/system_ila_0/U0/probe18_1" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">design_1_i/system_ila_0/U0/probe18_1[15:0]</obj_property>
+         <obj_property name="ObjectShortName">probe18_1[15:0]</obj_property>
+         <obj_property name="label">qemulator_0_reward2</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="LABELRADIX">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>
